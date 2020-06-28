@@ -1,0 +1,62 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Bebas Neue", "Roboto Condensed", sans-serif;
+  line-height: 24px;
+  background: white;
+  color: rgba(16, 38, 84, 1);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+  border-style: none;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fitness/source/fonts/RobotoCondensed-Light.woff2") format("woff2"), url("../fitness/source/fonts/RobotoCondensed-Light.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fitness/source/fonts/BebasNeueRegular.woff2") format("woff2"), url("../fitness/source/fonts/BebasNeueRegular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fitness/source/fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fitness/source/fonts/RobotoCondensed-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fitness/source/fonts/BebasNeueBold.woff2") format("woff2"), url("../fitness/source/fonts/BebasNeueBold.woff") format("woff");
+  font-weight: 700;
+}
