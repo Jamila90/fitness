@@ -1,0 +1,156 @@
+.offer {
+  padding: 130px 103px 100px;
+}
+
+.offer__heading {
+  margin: 0 0 65px;
+  font-size: 49px;
+  text-align: center;
+}
+
+.offer-wrap {
+  display: flex;
+}
+
+.offer__price {
+  display: flex;
+  width: 49%;
+  margin-right: 40px;
+}
+
+.offer__sale-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 49%;
+}
+
+.offer__sale-item {
+  margin-bottom: 35px;
+  padding: 26px 32px;
+  border: 7px solid rgba(28, 51, 116, 1);
+  border-image: linear-gradient(to bottom, rgba(209, 10, 66, 1), rgba(0, 65, 202, 1));
+  border-image-slice: 1;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.offer__sale-item h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.offer__sale-item p {
+  margin-bottom: 64px;
+}
+
+.offer__price-text {
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+  width: 88%;
+  background-color: rgba(237, 2, 51, 1);
+}
+
+.offer__year {
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
+.offer__num {
+  margin-bottom: 45px;
+  font-size: 70px;
+  font-weight: 700;
+  color: white;
+}
+
+.offer__price-text p {
+  margin-bottom: 185px;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.offer-img__wrap {
+  width: 100%;
+}
+
+.offer__img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.offer__link {
+  width: 40%;
+  margin-top: auto;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: white;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.offer__link--two {
+  color: rgba(28, 51, 116, 1);
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 1199px)  {
+  .offer {
+    padding: 108px 45px 100px;
+  }
+
+  .offer__heading {
+    font-size: 42px;
+    margin: 0 0 50px;
+  }
+
+  .offer-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .offer__price {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 29px;
+  }
+
+  .offer__price-text {
+    width: 65%;
+    padding: 44px 39px 42px 40px;
+  }
+
+  .offer__sale-list {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .offer__sale-item {
+    width: 48%;
+    margin-bottom: 0;
+    padding: 27px 66px 23px 29px;
+  }
+
+  .offer__sale-item p {
+    margin-bottom: 40px;
+  }
+}

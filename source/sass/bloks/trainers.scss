@@ -1,0 +1,152 @@
+.trainers {
+  position: relative;
+  padding: 6px 108px 110px;
+}
+
+.trainers__heading {
+  margin: 0 0 63px;
+  font-size: 49px;
+  letter-spacing: 1px;
+}
+
+.trainers__list {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.trainers__info-list {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 38, 84, 0.89);
+  padding: 127px 19px 40px 72px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  visibility: hidden;
+}
+
+.trainers__info-item  {
+  margin-bottom: 11px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  text-align: left;
+  list-style: disc;
+  color: white;
+}
+
+.trainers__info-item h4 {
+  margin: 0;
+  visibility: hidden;
+}
+
+.trainers__info-item--name {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.trainers__item {
+  position: relative;
+  display: none;
+  margin-right: 15px;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    h3 {
+      visibility: hidden;
+    }
+    .trainers__info-list,
+    .trainers__info-item h4 {
+      visibility: visible;
+    }
+  }
+}
+
+.trainers__item--active {
+  display: block;
+}
+
+.trainers__item h3 {
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  visibility: visible;
+}
+
+.trainers__info-item--name,
+.trainers__info-item--skill {
+  list-style: none;
+}
+
+.trainers__info-item--skill {
+  position: absolute;
+  top: 74px;
+  left: 0;
+  right: 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.trainers__btn-prev::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 32px;
+  background-image: url("../img/icon-arrow-left.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 32px;
+  top: 44%;
+  left: 49px;
+  cursor: pointer;
+}
+
+.trainers__btn-next::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 32px;
+  background-image: url("../img/icon-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 32px;
+  top: 44%;
+  right: 49px;
+  cursor: pointer;
+}
+
+.trainers__img {
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1199px) {
+  .trainers {
+    padding: 6px 102px 90px;
+  }
+
+  .trainers__heading {
+    margin: 0 0 54px;
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .trainers__item {
+    margin-right: 0;
+  }
+}

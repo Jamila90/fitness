@@ -1,66 +1,72 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitness</title>
   <link rel="stylesheet" href="./css/style.min.css">
-  <title>Document</title>
 </head>
+
 <body>
 <main class="timetable-content timetable">
-<div class="timetable__wrap">
-  <div class="timetable__workout-wrap">
+  <div class="timetable__wrap">
     <h1 class="timetable__heading">Расписание</h1>
-    <ul class="timetable__days-list">
-      <li class="timetable__item">Понедельник</li>
-      <li class="timetable__item">Вторник</li>
-      <li class="timetable__item">Среда</li>
-      <li class="timetable__item">Четверг</li>
-      <li class="timetable__item">Пятница</li>
-      <li class="timetable__item">Суббота</li>
-      <li class="timetable__item">Воскресенье</li>
-    </ul>
-    <ul class="timetable__workout-list">
-      <li class="timetable__workout-item timetable__workout-item--time">08:00</li>
-      <li class="timetable__workout-item">CrossFit</li>
-      <li class="timetable__workout-item">Aerostretching</li>
-      <li class="timetable__workout-item">Hot Iron</li>
-      <li class="timetable__workout-item">Pilates</li>
-      <li class="timetable__workout-item">Stretching</li>
-      <li class="timetable__workout-item">Functional</li>
-      <li class="timetable__workout-item">Body Sculpt</li>
-
-      <li class="timetable__workout-item timetable__workout-item--time">12:00</li>
-      <li class="timetable__workout-item">Body Sculpt</li>
-      <li class="timetable__workout-item">CrossFit</li>
-      <li class="timetable__workout-item">Aerostretching</li>
-      <li class="timetable__workout-item">Hot Iron</li>
-      <li class="timetable__workout-item">Pilates</li>
-      <li class="timetable__workout-item">Stretching</li>
-      <li class="timetable__workout-item">Functional</li>
-
-      <li class="timetable__workout-item timetable__workout-item--time">18:00</li>
-      <li class="timetable__workout-item">Functional</li>
-      <li class="timetable__workout-item">Body Sculpt</li>
-      <li class="timetable__workout-item">CrossFit</li>
-      <li class="timetable__workout-item">Aerostretching</li>
-      <li class="timetable__workout-item">Hot Iron</li>
-      <li class="timetable__workout-item">Pilates</li>
-      <li class="timetable__workout-item">Stretching</li>
-
-      <li class="timetable__workout-item timetable__workout-item--time">20:00</li>
-      <li class="timetable__workout-item">Stretching</li>
-      <li class="timetable__workout-item">Functional</li>
-      <li class="timetable__workout-item">Body Sculpt</li>
-      <li class="timetable__workout-item">CrossFit</li>
-      <li class="timetable__workout-item">Aerostretching </li>
-      <li class="timetable__workout-item">Hot Iron</li>
-      <li class="timetable__workout-item">Pilates</li>
-    </ul>
+    <table class="timetable__workout-wrap">
+      <tr class="timetable__days-list">
+        <td class="timetable__item">Понедельник</td>
+        <td class="timetable__item">Вторник</td>
+        <td class="timetable__item">Среда</td>
+        <td class="timetable__item">Четверг</td>
+        <td class="timetable__item">Пятница</td>
+        <td class="timetable__item">Суббота</td>
+        <td class="timetable__item">Воскресенье</td>
+      </tr>
+<!--      <div class="timetable__workout-wrapper">-->
+        <tr class="timetable__workout-list">
+          <td class="timetable__workout-item timetable__workout-item--time">08:00</td>
+          <td class="timetable__workout-item">CrossFit</td>
+          <td class="timetable__workout-item">Aerostretching</td>
+          <td class="timetable__workout-item">Hot Iron</td>
+          <td class="timetable__workout-item">Pilates</td>
+          <td class="timetable__workout-item">Stretching</td>
+          <td class="timetable__workout-item">Functional</td>
+          <td class="timetable__workout-item">Body Sculpt</td>
+        </tr>
+        <tr class="timetable__workout-list">
+          <td class="timetable__workout-item timetable__workout-item--time">12:00</td>
+          <td class="timetable__workout-item">Body Sculpt</td>
+          <td class="timetable__workout-item">CrossFit</td>
+          <td class="timetable__workout-item">Aerostretching</td>
+          <td class="timetable__workout-item">Hot Iron</td>
+          <td class="timetable__workout-item">Pilates</td>
+          <td class="timetable__workout-item">Stretching</td>
+          <td class="timetable__workout-item">Functional</td>
+        </tr>
+        <tr class="timetable__workout-list">
+          <td class="timetable__workout-item timetable__workout-item--time">18:00</td>
+          <td class="timetable__workout-item">Functional</td>
+          <td class="timetable__workout-item">Body Sculpt</td>
+          <td class="timetable__workout-item">CrossFit</td>
+          <td class="timetable__workout-item">Aerostretching</td>
+          <td class="timetable__workout-item">Hot Iron</td>
+          <td class="timetable__workout-item">Pilates</td>
+          <td class="timetable__workout-item">Stretching</td>
+        </tr>
+        <tr class="timetable__workout-list">
+          <td class="timetable__workout-item timetable__workout-item--time">20:00</td>
+          <td class="timetable__workout-item">Stretching</td>
+          <td class="timetable__workout-item">Functional</td>
+          <td class="timetable__workout-item">Body Sculpt</td>
+          <td class="timetable__workout-item">CrossFit</td>
+          <td class="timetable__workout-item">Aerostretching </td>
+          <td class="timetable__workout-item">Hot Iron</td>
+          <td class="timetable__workout-item">Pilates</td>
+        </tr>
+<!--      </div>-->
+    </table>
   </div>
-</div>
 </main>
 </body>
+
 </html>

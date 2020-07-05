@@ -1,5 +1,10 @@
 .timetable__wrap {
   display: flex;
+  flex-direction: column;
+  padding: 130px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1366px;
 }
 
 .timetable__heading {
@@ -9,16 +14,17 @@
 }
 
 .timetable__workout-wrap {
-  width: 100%;
-  padding: 130px 60px;
+  width: 96%;
+  padding: 0 65px;
+  margin: 0 auto;
 }
 
 .timetable__days-list {
   display: flex;
-  justify-content: flex-end;
-  width: 94%;
+  justify-content: space-between;
+  width: 98%;
   margin: 0 auto 8px;
-  padding: 0;
+  padding: 0 0 0 75px;
 }
 
 .timetable__item {
@@ -27,19 +33,22 @@
   justify-content: center;
   width: 148px;
   height: 66px;
-  margin-right: 9px;
+  margin-right: 10px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   border: 1px solid rgba(28, 51, 116, 1);
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .timetable__workout-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  margin: 0;
+  justify-content: space-between;
+  width: 98%;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -54,11 +63,19 @@
   font-size: 18px;
   font-weight: 400;
   background-color: rgba(248, 249, 252, 1);
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .timetable__workout-item--time {
   width: 65px;
-  margin-bottom: 9px;
+  margin-bottom: 7px;
   border: 1px solid rgba(28, 51, 116, 1);
   background: none;
+}
+
+@media only screen and (max-width: 1199px) {
+
 }

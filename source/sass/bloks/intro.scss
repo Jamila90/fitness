@@ -1,0 +1,134 @@
+.intro {
+  padding: 180px 120px 95px;
+  background-image: url("../img/promo-desktop@1x.jpg"), url("../img/background-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 500px 556px, cover;
+  background-position: 65% 50%, 0 0;
+}
+
+.intro__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 34%;
+}
+
+.intro__heading {
+  margin: 0 0 59px;
+  order: 2;
+  font-size: 109px;
+  text-align: end;
+  line-height: 107px;
+  color: white;
+  letter-spacing: 4px;
+}
+
+.intro__title {
+  margin: 0 0 28px;
+  font-size: 49px;
+  order: 1;
+  color: white;
+  font-weight: 300;
+  text-align: end;
+  letter-spacing: 3px;
+}
+
+.intro__description {
+  margin: 0;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  width: 30%;
+  text-align: end;
+  bottom: 147px;
+  font-family: "Roboto Condensed", sans-serif;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.intro__link {
+  order: 3;
+  width: 235px;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 2px;
+  z-index: 1;
+
+  &:active,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: white;
+    color: rgba(16, 38, 84, 1);
+  }
+}
+
+.intro__social {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 480px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 92.5%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+}
+
+.intro__social a {
+  margin-bottom: 10px;
+  color: white;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .intro {
+    padding: 141px 206px 106px 55px;
+    background-image: url(../img/promo-tablet@1x.jpg),url(../img/background-desktop@1x.png);
+    background-size: 324px 390px, cover;
+    background-position: 90% 50%,0 0;
+  }
+
+  .intro__wrapper {
+    width: 63%;
+  }
+
+  .intro__heading {
+    font-size: 86px;
+    margin: 0 0 35px;
+    line-height: 90px;
+  }
+
+  .intro__title {
+    font-size: 34px;
+    margin-bottom: 9px;
+  }
+
+  .intro__description {
+    bottom: 120px;
+    width: 40%;
+    left: -25px;
+  }
+
+  .intro__link {
+    width: 193px;
+  }
+
+  .intro__social {
+    display: none;
+  }
+}

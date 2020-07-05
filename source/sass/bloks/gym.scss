@@ -1,0 +1,123 @@
+.gym__wrapper {
+  display: flex;
+  padding: 120px 105px 132px;
+}
+
+.gym__text {
+  width: 43%;
+  padding: 59px 0 0 59px;
+}
+
+.gym__heading {
+  margin: 0 0 22px;
+  font-size: 49px;
+  letter-spacing: 1px;
+}
+
+.gym__text h3 {
+  margin: 0 0 40px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+}
+
+.gym__text p {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  width: 80%;
+  line-height: 25px;
+}
+
+.gym__image-wrap {
+  position: relative;
+  height: 500px;
+}
+
+.gym__play {
+  position: absolute;
+  width: 364px;
+  height: 228px;
+  left: -61px;
+  right: 0;
+  top: 57%;
+}
+
+.gym__play-btn {
+  position: absolute;
+  left: 18%;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  font-size: 0;
+  background-image: url("../img/play-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position: 2px 2px;
+  background-color: transparent;
+  transition: transform 0.2s ease;
+  transform: translate(-50%, -50%);
+  border: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .gym__wrapper {
+    padding: 48px 44px 110px;
+    display: flex;
+    flex-direction: column;
+  }
+  .gym-membership {
+    padding: 110px 103px 120px;
+}
+
+  .gym__text {
+    width: 100%;
+    text-align: center;
+    padding: 59px 59px 40px;
+  }
+
+  .gym__heading {
+    font-size: 42px;
+  }
+
+  .gym__text h3 {
+    margin: 0 0 33px;
+  }
+
+  .gym__text p {
+    width: 100%;
+  }
+
+  .gym__text span {
+    display: none;
+  }
+
+  .gym__wrapper {
+    padding: 48px 44px 28px;
+  }
+
+  .gym__play {
+    width: 266px;
+    height: 167px;
+    left: 207px;
+    top: 52%;
+  }
+
+  .gym__play-btn {
+    width: 73px;
+    height: 73px;
+    background-size: 73px 73px;
+    left: 50%;
+    bottom: 82px;
+  }
+}

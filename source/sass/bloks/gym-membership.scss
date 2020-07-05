@@ -1,0 +1,165 @@
+.gym-membership {
+  background-color: rgba(248, 249, 252, 1);
+  padding: 135px 103px 120px;
+  font-size: 49px;
+  text-align: center;
+}
+
+.gym-membership__list {
+  margin: 0 auto 39px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  flex: 1 1 auto;
+  width: 30%;
+  height: 41px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.gym-membership__title {
+  margin: 0 0 48px;
+  font-size: 49px;
+  letter-spacing: 1px;
+}
+
+.gym-membership__list-card {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gym-membership__item-card {
+  text-align: center;
+  position: relative;
+  padding: 57px 67px 60px;
+  background-color: white;
+  width: 31%;
+  border: 7px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    border-image: linear-gradient(to bottom, rgba(209, 10, 66, 1), rgba(0, 65, 202, 1));
+    border-image-slice: 1;
+  }
+}
+
+.gym-membership__item-card--active {
+     border-image: linear-gradient(to bottom, rgba(209, 10, 66, 1), rgba(0, 65, 202, 1));
+     border-image-slice: 1;
+}
+
+.gym-membership__heading {
+  font-size: 26px;
+  margin: 0 0 13px;
+  font-family: "Roboto Condensed", sans-serif;
+  white-space: nowrap;
+}
+
+.gym-membership__description {
+  margin-bottom: 97px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.gym-membership__price-bg {
+  display: inline-block;
+  position: absolute;
+  font-size: 100px;
+  z-index: 0;
+  color: rgba(232, 232, 232, 1);
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  top: 45%;
+}
+
+.gym-membership__price {
+  font-size: 60px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  color: rgba(16, 58, 174, 1);
+  z-index: 1;
+  display: block;
+  letter-spacing: 2px;
+  text-align: left;
+  margin-bottom: 67px;
+  padding-left: 17px;
+}
+
+.gym-membership__item {
+  height: 41px;
+  color: rgba(16, 38, 84, 0.5);
+  cursor: pointer;
+}
+
+.gym-membership__item--active {
+  border-bottom: 2px solid rgba(209, 10, 66, 1);
+  color: rgba(16, 38, 84, 1);
+}
+
+.gym-membership__link {
+  border: 2px solid rgba(16, 38, 84, 1);
+  padding-top: 21px;
+  padding-bottom: 21px;
+  width: 100%;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: rgba(16, 38, 84, 1);
+
+  &:hover {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    background: linear-gradient(to right, rgba(209, 10, 66, 1), rgba(0, 65, 202, 1));
+    border: none;
+    color: white;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.gym-membership__link--active {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background: linear-gradient(to right, rgba(209, 10, 66, 1), rgba(0, 65, 202, 1));
+  border: none;
+  color: white;
+}
+
+@media only screen and (max-width: 1199px) {
+  .gym-membership {
+    padding: 106px 163px 98px;
+  }
+  .gym-membership__title {
+    margin: 0 0 42px;
+    font-size: 42px;
+  }
+
+  .gym-membership__list-card {
+    flex-direction: column;
+  }
+
+  .gym-membership__list {
+    width: 61%;
+  }
+
+  .gym-membership__item-card  {
+    margin: 0 auto 35px;
+    width: 100%;
+    padding: 64px 109px 60px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
