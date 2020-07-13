@@ -18,3 +18,15 @@
     opacity: 0.3;
   }
 }
+
+@media only screen and (max-width: 1199px) {
+  .footer-page__wrap {
+    padding: 43px 44px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-page__wrap {
+    flex-wrap: wrap;
+  }
+}

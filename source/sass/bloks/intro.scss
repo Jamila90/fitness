@@ -16,46 +16,46 @@
 
 .intro__heading {
   margin: 0 0 59px;
-  order: 2;
   font-size: 109px;
   text-align: end;
   line-height: 107px;
-  color: white;
   letter-spacing: 4px;
+  color: white;
+  order: 2;
 }
 
 .intro__title {
   margin: 0 0 28px;
   font-size: 49px;
-  order: 1;
-  color: white;
   font-weight: 300;
   text-align: end;
   letter-spacing: 3px;
+  color: white;
+  order: 1;
 }
 
 .intro__description {
-  margin: 0;
-  color: white;
-  display: inline-block;
   position: absolute;
-  width: 30%;
-  text-align: end;
-  bottom: 147px;
-  font-family: "Roboto Condensed", sans-serif;
   left: 0;
   right: 0;
+  bottom: 147px;
+  display: inline-block;
+  width: 30%;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
+  text-align: end;
   line-height: 20px;
+  color: white;
 }
 
 .intro__link {
-  order: 3;
   width: 235px;
-  color: white;
   font-size: 12px;
   letter-spacing: 2px;
   z-index: 1;
+  color: white;
+  order: 3;
 
   &:active,
   &:focus {
@@ -98,9 +98,9 @@
 @media only screen and (max-width: 1199px) {
   .intro {
     padding: 141px 206px 106px 55px;
-    background-image: url(../img/promo-tablet@1x.jpg),url(../img/background-desktop@1x.png);
+    background-image: url("../img/promo-tablet@1x.jpg"), url("../img/background-tablet@1x.png");
     background-size: 324px 390px, cover;
-    background-position: 90% 50%,0 0;
+    background-position: 90% 50%, 0 0;
   }
 
   .intro__wrapper {
@@ -108,20 +108,21 @@
   }
 
   .intro__heading {
-    font-size: 86px;
+    width: 75%;
     margin: 0 0 35px;
+    font-size: 86px;
     line-height: 90px;
   }
 
   .intro__title {
-    font-size: 34px;
     margin-bottom: 9px;
+    font-size: 34px;
   }
 
   .intro__description {
+    left: -25px;
     bottom: 120px;
     width: 40%;
-    left: -25px;
   }
 
   .intro__link {
@@ -130,5 +131,37 @@
 
   .intro__social {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .intro {
+    background-image: url("../img/background-mobile@1x.png");
+    background-size: cover;
+    padding: 116px 15px 80px 15px;
+  }
+
+  .intro__wrapper {
+    width: 291px;
+  }
+
+  .intro__heading {
+    margin: 0 0 40px;
+    font-size: 78px;
+    letter-spacing: 2px;
+    line-height: 82px;
+  }
+
+  .intro__title {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .intro__description {
+    left: -9px;
+  }
+
+  .intro__link {
+    width: 290px;
   }
 }

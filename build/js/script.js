@@ -1,62 +1,74 @@
 "use strict";
 
-// let itemList = document.querySelectorAll(".gym-membership__list");
-// let cardList = document.querySelectorAll(".gym-membership__list-card");
-// let itemActive = document.querySelector(".gym-membership__item");
-// let cardActive = document.querySelector(".gym-membership__item-card");
-const TAB = 9;
+// const TAB = 9;
 
-// let trainers = document.querySelector(`.trainers__list`);
-//
-// let swiper = new Swiper(trainers, {
-//   slidesPerView: 4,
-//   spaceBetween: 30,
-//   slidesPerGroup: 4,
-//   loop: true,
-//   loopFillGroupWithBlank: true,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
-
-  // noinspection JSUnresolvedFunction
-$(document).ready(function() { // Ждём загрузки страницы
-    $(`.gym-membership__list li`).click(function() { // Событие нажатия на элемент меню вкладок
-      if (!$(this).hasClass(`gym-membership__item--active`)) { // Проверка, не нажали ли мы на уже активный пункт
-        let i = $(this).index(); // Получаем порядковый номер нажатого пункта, отстче идет от 0 (0,1,2)
-        $(`.gym-membership__list li.gym-membership__item--active`).removeClass(`gym-membership__item--active`); // Удаляем активный класс у прошлого пункта меню
-        $(`.gym-membership__list-card .gym-membership__item-card`).removeClass(`gym-membership__item-card--active`); // Скрываем и удаляем активный класс у прошлого контейнера с содержимым
-        $(this).addClass(`gym-membership__item--active`); // Добавляем нажатому пункту меню активный класс
-        $($(`.gym-membership__list-card`).children(`.gym-membership__item-card`)[i]).addClass(`gym-membership__item-card--active`); // Показываем и добавляем активный класс соответствующему контейнеру
-      }
-    });
+$(document).ready(function () {
+  $(`.gym-membership__list li`).click(function () {
+    if (!$(this).hasClass(`gym-membership__item--active`)) {
+      let i = $(this).index();
+      $(`.gym-membership__list li.gym-membership__item--active`).removeClass(`gym-membership__item--active`);
+      $(`.gym-membership__list-card .gym-membership__item-card`).removeClass(`gym-membership__item-card--active`);
+      $(this).addClass(`gym-membership__item--active`);
+      $($(`.gym-membership__list-card`).children(`.gym-membership__item-card`)[i]).addClass(`gym-membership__item-card--active`);
+    }
   });
+});
+
 
 $(document).ready(function () {
   $(`#phone`).mask(`+7(999) 999-99-99`);
 });
 
+// Слайдер
 $(document).ready(function () {
-$(`.trainers__btn-next`).click(function () {
-  console.log(`click`);
-let currentFourImg = $(`.trainers__item--active`);
-let nextBlock = currentFourImg.next();
+  $(`.trainers__list-wrap`).slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    speed: 800,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+});
 
-if(nextBlock.length) {
-  currentFourImg.removeClass(`trainers__item--active`).css(`z-index`, -1);
-  nextBlock.addClass(`trainers__item--active`).css(`z-index`, 1)
-}
-})
 
-  $(`.trainers__btn-prev`).click(function () {
-    console.log(`clicked`);
-    let currentFourImg = $(`.trainers__item--active`);
-    let prevBlock = currentFourImg.prev();
+$(`.timetable__current-option`).on(`click`, function() {
+  $(`.timetable__custom-option`).toggle()
+  $(`.timetable__workout-item`).hide().style(`visibility: hidden`);
+  $(`.timetable__workout-item--time`).show(`opacity: 0.3`);
+});
 
-    if(prevBlock.length) {
-      currentFourImg.removeClass(`trainers__item--active`).css(`z-index`, -1);
-      prevBlock.addClass(`trainers__item--active`).css(`z-index`, 1);
-    }
-  })
-})
+// Показ и скрытие списка у кастомного селекта
+$(`.timetable__custom-option`).on(`click`, `li`, function() {
+  let choosenValue = $(this).data(`value`),
+    choosenText = $(this).text();
+  $(`select`).val(choosenValue).prop(`selected`, true);
+  $(`.timetable__current-option`)
+    .data(`value`, choosenValue)
+    .find(`span`)
+    .text(choosenText);
+  $(`.timetable__custom-option`).hide();
+  $(`.timetable__workout-item`).show();
+});
+
+// Стрелка вниз/вверх у кастомного селекта
+$(`.timetable__img`).on('click', function(){
+  $(this)
+    .toggleClass(`timetable__img--up`)
+    .siblings(`timetable__img--up`)
+    .slideToggle();
+});

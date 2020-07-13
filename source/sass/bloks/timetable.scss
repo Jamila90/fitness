@@ -1,10 +1,25 @@
+.timetable {
+  padding: 130px 0;
+}
+
 .timetable__wrap {
   display: flex;
   flex-direction: column;
-  padding: 130px 0;
-  margin: 0 auto;
   width: 100%;
   max-width: 1366px;
+  margin: 0 auto;
+}
+
+.timetable__workout-wrap--second {
+  display: none;
+}
+
+.timetable__workout-wrap--third {
+  display: none;
+}
+
+.timetable__days-wrap {
+  display: none;
 }
 
 .timetable__heading {
@@ -76,6 +91,205 @@
   background: none;
 }
 
-@media only screen and (max-width: 1199px) {
+select {
+  display: none;
+}
 
+.timetable__select-custom {
+  display: none;
+}
+
+@media only screen and (max-width: 1199px) {
+  .timetable {
+    padding: 88px 0 0;
+  }
+
+  .timetable__wrap {
+    display: flex;
+    flex-direction: row;
+    width: 93%;
+    padding: 0;
+    overflow: auto;
+
+    &::-webkit-scrollbar-track {
+      background: rgba(254, 235, 239, 1);
+    }
+
+    &::-webkit-scrollbar {
+      width: 205px;
+      height: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(237, 2, 51, 1);
+      border-radius: 8px;
+    }
+  }
+
+  .timetable__workout-wrap--second {
+    display: block;
+  }
+
+  .timetable__heading {
+    margin: 0 0 47px;
+    font-size: 45px;
+  }
+
+  .timetable__workout-wrap {
+    padding: 0;
+  }
+
+  .timetable__item--5,
+  .timetable__item--6,
+  .timetable__item--7 {
+    display: none;
+  }
+
+  .timetable__workout-item--5,
+  .timetable__workout-item--6,
+  .timetable__workout-item--7 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .timetable {
+    padding: 72px 0 0;
+  }
+
+  .timetable__heading {
+    font-size: 34px;
+  }
+
+  .timetable__workout-wrap {
+    display: none;
+  }
+
+  .timetable__workout-wrap--second {
+    display: none;
+  }
+
+  .timetable__workout-wrap--third {
+    display: flex;
+    height: 355px;
+    align-items: flex-end;
+  }
+
+  .timetable__workout-list {
+    width: 100%;
+  }
+
+  .timetable__workout-item {
+    width: 100%;
+    height: 79px;
+  }
+
+  .timetable__workout-item--time {
+    width: 70px;
+    height: 80px;
+    border: 2px solid rgba(28, 51, 116, 1);
+  }
+
+  .timetable__select-wrap {
+    width: 100%;
+    overflow: auto;
+  }
+
+  .timetable__select {
+    position: absolute;
+    right: 0;
+    height: 60px;
+    left: 0;
+    width: 71%;
+    margin: 0 0 0 76px;
+    border: 2px solid rgba(28, 51, 116, 1);
+  }
+
+  table tbody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .timetable__select-custom {
+    position: relative;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 74%;
+    margin: 0 auto 0 72px;
+  }
+
+  .timetable__current-option {
+    width: 100%;
+    height: 60px;
+    padding: 16px 0;
+    border: 2px solid rgba(28, 51, 116, 1);
+    cursor: pointer;
+  }
+
+  .timetable__custom-option {
+    position: absolute;
+    top: 58px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 78%;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    border: 2px solid;
+    border-top: none;
+  }
+
+  .timetable__custom-option li {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgba(28, 51, 116, 1);
+    width: 100%;
+    padding: 12px 0;
+    cursor: pointer;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .timetable__current-option span {
+    display: flex;
+    width: 100%;
+    padding-left: 40px;
+  }
+
+  .timetable__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 51px;
+    height: 60px;
+    border: 2px solid rgba(28, 51, 116, 1);
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 45%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 19px;
+      height: 10px;
+      margin: 0 auto;
+      background-image: url("../img/icon-dropdown-arrow.svg");
+      background-repeat: no-repeat;
+      background-size: 19px 10px;
+      background-position: 0 0;
+    }
+  }
+
+  .timetable__img--up::before {
+    display: block;
+    background-image: url("../img/icon-dropup-arrow.svg");
+  }
 }

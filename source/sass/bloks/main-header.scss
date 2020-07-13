@@ -43,3 +43,17 @@
     letter-spacing: 0.5px;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .main-header {
+    padding: 20px 15px 0;
+  }
+
+  .main-header__logo-img {
+    width: 68px;
+  }
+
+  .main-header__phone-link {
+    font-size: 20px;
+  }
+}

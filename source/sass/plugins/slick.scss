@@ -1,0 +1,39 @@
+/* Слайдер */
+.slick-slider {
+  display: flex;
+  justify-content: space-between;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  width: 1160px;
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active h3 {
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  visibility: visible;
+}
+
+.slick-slide.slick-active {
+  &:hover h3 {
+    visibility: hidden;
+  }
+}
+
+/* Стрелка */
+.slick-arrow {
+  position: absolute;
+  font-size: 0;
+}

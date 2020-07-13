@@ -1,20 +1,20 @@
 .form {
+  width: 90%;
   padding: 80px 157px 71px 100px;
   background-color: rgba(16, 38, 84, 1);
-  width: 90%;
 }
 
 .form__inner-wrap h2 {
   margin: 0 0 32px;
   font-size: 49px;
-  color: white;
   letter-spacing: 1.5px;
+  color: white;
 }
 
 .form__list {
+  display: flex;
   margin: 0 0 26px;
   padding: 0;
-  display: flex;
 }
 
 .form__item input {
@@ -37,14 +37,19 @@
   padding-top: 15px;
   padding-bottom: 15px;
   background: transparent;
-  border: 2px solid white;
-  color: white;
-  text-transform: uppercase;
   font-size: 12px;
+  border: 2px solid white;
+  text-transform: uppercase;
+  color: white;
 
   &:hover {
     background-color: white;
     color: rgba(16, 38, 84, 1);
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
   }
 }
 
@@ -63,27 +68,48 @@
   }
 
   .form__inner-wrap h2 {
-    font-size: 42px;
     margin: 0 0 20px;
+    font-size: 42px;
   }
 
   .form__list {
-    margin: 0 0 30px;
     width: 100%;
+    margin: 0 0 30px;
   }
 
   .form__item {
+    display: flex;
+    flex-direction: column;
     width: 64%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .form__item {
-    display: flex;
-    flex-direction: column;
   }
 
   .form__btn {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .form {
+    padding: 70px 15px 66px 15px;
+  }
+
+  .form__inner-wrap {
+    width: 100%;
+  }
+
+  .form__inner-wrap h2 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+
+  .form__list {
+    flex-direction: column;
+    margin: 0 0 20px;
+  }
+
+  .form__item {
+    width: 100%;
+    margin-bottom: 17px;
   }
 }

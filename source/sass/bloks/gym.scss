@@ -21,24 +21,24 @@
 }
 
 .gym__text p {
+  width: 80%;
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
-  width: 80%;
   line-height: 25px;
 }
 
 .gym__image-wrap {
   position: relative;
-  height: 500px;
+  padding-bottom: 181px;
 }
 
 .gym__play {
   position: absolute;
-  width: 364px;
   height: 228px;
   left: -61px;
   right: 0;
   top: 57%;
+  width: 364px;
 }
 
 .gym__play-btn {
@@ -58,13 +58,12 @@
   border: 0;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    outline: 1;
+  &:hover {
     transform: translate(-50%, -50%) scale(1.2);
   }
 
-  &:active {
+  &:active,
+  &:focus {
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0.3;
   }
@@ -72,18 +71,19 @@
 
 @media only screen and (max-width: 1199px) {
   .gym__wrapper {
-    padding: 48px 44px 110px;
     display: flex;
     flex-direction: column;
+    padding: 48px 44px 28px;
   }
+
   .gym-membership {
     padding: 110px 103px 120px;
-}
+  }
 
   .gym__text {
     width: 100%;
-    text-align: center;
     padding: 59px 59px 40px;
+    text-align: center;
   }
 
   .gym__heading {
@@ -102,22 +102,64 @@
     display: none;
   }
 
-  .gym__wrapper {
-    padding: 48px 44px 28px;
-  }
-
   .gym__play {
-    width: 266px;
     height: 167px;
     left: 207px;
     top: 52%;
+    width: 266px;
   }
 
   .gym__play-btn {
+    left: 50%;
+    bottom: 82px;
     width: 73px;
     height: 73px;
     background-size: 73px 73px;
-    left: 50%;
-    bottom: 82px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .gym__wrapper {
+    padding: 69px 0 210px;
+  }
+
+  .gym__image-wrap {
+    padding-bottom: 60px;
+  }
+
+  .gym__text {
+    margin-bottom: 30px;
+    padding: 0 15px;
+    text-align: left;
+  }
+
+  .gym__heading {
+    margin: 0 0 15px;
+    font-size: 32px;
+  }
+
+  .gym__text h3 {
+    margin: 0 0 24px;
+  }
+
+  .gym__text p {
+    width: 90%;
+  }
+
+  .gym__img {
+    width: 100%;
+  }
+
+  .gym__play {
+    left: 0;
+    right: 0;
+    top: 93%;
+    bottom: 0;
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .gym__play-btn {
+    bottom: -127px;
   }
 }
