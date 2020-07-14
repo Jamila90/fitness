@@ -2,6 +2,7 @@
 
 // const TAB = 9;
 
+// Табы
 $(document).ready(function () {
   $(`.gym-membership__list li`).click(function () {
     if (!$(this).hasClass(`gym-membership__item--active`)) {
@@ -72,3 +73,12 @@ $(`.timetable__img`).on('click', function(){
     .siblings(`timetable__img--up`)
     .slideToggle();
 });
+
+$(`.timetable__workout-item`).hover(function(){
+    $(this).css(`border`, `2px solid`, `rgba(237, 2, 51, 1)`).css(`background-color`, `white`).css(`color`, `rgba(237, 2, 51, 1)`)
+      .find(`timetable__item`)
+      .css(`background-color`, `rgba(237, 2, 51, 1)`);
+  },
+  function(){
+    $(this).css(`border`, `none`).css(`background-color`, `rgba(248, 249, 252, 1)`).css(`color`, `rgba(28, 51, 116, 1)`);
+  });
