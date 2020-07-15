@@ -1645,6 +1645,7 @@ select {
   background: -webkit-gradient(linear, left top, right top, from(#d10a42), to(#0041ca));
   background: linear-gradient(to right, #d10a42, #0041ca);
   -webkit-background-clip: text;
+  /*stylelint-disable-line*/
   -webkit-text-fill-color: transparent; }
 
 .our-advantages__descr-wrap {
