@@ -4,10 +4,10 @@
 
 // Табы
 $(document).ready(function () {
-  $(`.gym-membership__list li`).click(function (evt) {
+  $(`.gym-membership__list li button`).click(function (evt) {
     if (!$(evt.target).hasClass(`gym-membership__item--active`)) {
       let i = $(evt.target).index();
-      $(`.gym-membership__list li.gym-membership__item--active`).removeClass(`gym-membership__item--active`);
+      $(`.gym-membership__list li button.gym-membership__item--active`).removeClass(`gym-membership__item--active`);
       $(`.gym-membership__list-card .gym-membership__item-card`).removeClass(`gym-membership__item-card--active`);
       $(evt.target).addClass(`gym-membership__item--active`);
       $($(`.gym-membership__list-card`).children(`.gym-membership__item-card`)[i]).addClass(`gym-membership__item-card--active`);

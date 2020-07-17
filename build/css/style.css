@@ -1079,6 +1079,8 @@ select {
 
 .gym-membership__item {
   height: 41px;
+  border: none;
+  background: none;
   color: rgba(16, 38, 84, 0.5);
   cursor: pointer; }
 
