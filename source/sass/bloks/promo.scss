@@ -1,5 +1,7 @@
 .promo__wrapper {
   display: flex;
+  max-width: 1366px;
+  margin: 0 auto;
   padding: 123px 103px;
 }
 
@@ -123,6 +125,7 @@
 
 @media only screen and (max-width: 1199px) {
   .promo__wrapper {
+    max-width: 768px;
     padding: 100px 45px;
   }
 
@@ -180,6 +183,7 @@
 @media only screen and (max-width: 767px) {
   .promo__wrapper {
     flex-direction: column;
+    max-width: 320px;
     padding: 70px 17px 53px;
   }
 

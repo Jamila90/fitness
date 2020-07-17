@@ -3,6 +3,11 @@
   padding: 6px 108px 110px;
 }
 
+.trainers__wrap {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
 .trainers__heading {
   margin: 0 0 63px;
   font-size: 49px;
@@ -142,6 +147,10 @@
     padding: 6px 102px 90px;
   }
 
+  .trainers__wrap {
+    max-width: 768px;
+  }
+
   .trainers__heading {
     margin: 0 0 54px;
     font-size: 42px;
@@ -156,6 +165,10 @@
 @media only screen and (max-width: 767px) {
   .trainers {
     padding: 15px 45px 90px;
+  }
+
+  .trainers__wrap {
+    max-width: 320px;
   }
 
   .trainers__heading {

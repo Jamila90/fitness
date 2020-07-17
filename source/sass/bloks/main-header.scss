@@ -1,8 +1,12 @@
 .main-header {
   position: absolute;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
   padding: 31px 103px 0;
 }
 
@@ -35,6 +39,7 @@
 
 @media only screen and (max-width: 1199px) {
   .main-header {
+    max-width: 768px;
     padding: 41px 45px 0;
   }
 
@@ -46,6 +51,7 @@
 
 @media only screen and (max-width: 767px) {
   .main-header {
+    max-width: 320px;
     padding: 20px 15px 0;
   }
 

@@ -1,5 +1,7 @@
 .customer-reviews {
   position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
   padding: 25px 403px 120px;
 }
 
@@ -58,6 +60,7 @@
 
 @media only screen and (max-width: 1199px) {
   .customer-reviews {
+    max-width: 768px;
     padding: 8px 100px 97px;
   }
 
@@ -79,6 +82,7 @@
 
 @media only screen and (max-width: 767px) {
   .customer-reviews {
+    max-width: 320px;
     padding: 16px 45px 65px;
   }
 

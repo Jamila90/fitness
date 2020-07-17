@@ -6,6 +6,11 @@
   background-position: 65% 50%, 0 0;
 }
 
+.intro__wrap {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
 .intro__wrapper {
   position: relative;
   display: flex;
@@ -103,6 +108,10 @@
     background-position: 90% 50%, 0 0;
   }
 
+  .intro__wrap {
+    max-width: 768px;
+  }
+
   .intro__wrapper {
     width: 63%;
   }
@@ -139,6 +148,10 @@
     background-image: url("../img/background-mobile@1x.png");
     background-size: cover;
     padding: 116px 15px 80px 15px;
+  }
+
+  .intro__wrap {
+    max-width: 320px;
   }
 
   .intro__wrapper {

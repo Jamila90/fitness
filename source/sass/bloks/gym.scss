@@ -1,5 +1,7 @@
 .gym__wrapper {
   display: flex;
+  max-width: 1366px;
+  margin: 0 auto;
   padding: 120px 105px 132px;
 }
 
@@ -73,6 +75,7 @@
   .gym__wrapper {
     display: flex;
     flex-direction: column;
+    max-width: 768px;
     padding: 48px 44px 28px;
   }
 
@@ -120,6 +123,7 @@
 
 @media only screen and (max-width: 767px) {
   .gym__wrapper {
+    max-width: 320px;
     padding: 69px 0 210px;
   }
 

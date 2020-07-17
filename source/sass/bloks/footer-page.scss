@@ -5,6 +5,8 @@
 .footer-page__wrap {
   display: flex;
   justify-content: space-between;
+  max-width: 1366px;
+  margin: 0 auto;
   padding: 42px 105px;
 }
 
@@ -21,12 +23,14 @@
 
 @media only screen and (max-width: 1199px) {
   .footer-page__wrap {
+    max-width: 768px;
     padding: 43px 44px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .footer-page__wrap {
+    max-width: 320px;
     flex-wrap: wrap;
   }
 }

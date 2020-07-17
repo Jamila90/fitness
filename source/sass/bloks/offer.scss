@@ -2,6 +2,11 @@
   padding: 130px 103px 100px;
 }
 
+.offer__wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
 .offer__heading {
   margin: 0 0 65px;
   font-size: 49px;
@@ -119,6 +124,10 @@
     padding: 108px 45px 100px;
   }
 
+  .offer__wrapper {
+    max-width: 768px;
+  }
+
   .offer__heading {
     margin: 0 0 50px;
     font-size: 42px;
@@ -159,6 +168,10 @@
 @media only screen and (max-width: 767px) {
   .offer {
     padding: 85px 15px 60px;
+  }
+
+  .offer__wrapper {
+    max-width: 320px;
   }
 
   .offer__heading {

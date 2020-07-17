@@ -5,6 +5,11 @@
   background-color: rgba(248, 249, 252, 1);
 }
 
+.gym-membership__wrap {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
 .gym-membership__list {
   display: flex;
   justify-content: space-between;
@@ -139,6 +144,10 @@
     padding: 106px 163px 98px;
   }
 
+  .gym-membership__wrap {
+    max-width: 768px;
+  }
+
   .gym-membership__title {
     margin: 0 0 42px;
     font-size: 42px;
@@ -166,6 +175,10 @@
 @media only screen and (max-width: 767px) {
   .gym-membership {
     padding: 72px 0;
+  }
+
+  .gym-membership__wrap {
+    max-width: 320px;
   }
 
   .gym-membership__title {
