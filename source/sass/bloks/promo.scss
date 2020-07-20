@@ -1,15 +1,15 @@
 .promo__wrapper {
   display: flex;
-  max-width: 1366px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding: 123px 103px;
+  padding: 123px 0;
 }
 
 .promo__text-content {
   display: flex;
   flex-direction: column;
-  width: 44%;
-  padding: 85px 81px 87px 79px;
+  width: 43%;
+  padding: 82px 75px 85px 78px;
   letter-spacing: 3px;
   background-color: rgba(237, 2, 51, 1);
 }
@@ -19,8 +19,7 @@
 }
 
 .promo__heading {
-  width: 100%;
-  margin: 0 0 20px;
+  margin: 0 0 12px;
   font-size: 90px;
   line-height: 88px;
   color: white;
@@ -91,7 +90,7 @@
 
 .promo__description {
   width: 100%;
-  margin: 0 0 40px;
+  margin: 0 0 48px;
   font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 1px;
   color: white;

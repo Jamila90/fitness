@@ -1,7 +1,12 @@
 .form {
   width: 90%;
-  padding: 80px 157px 71px 100px;
+  padding: 80px 157px 20px 100px;
   background-color: rgba(16, 38, 84, 1);
+}
+
+.form__inner-wrap {
+  max-width: 450px;
+  margin-left: auto;
 }
 
 .form__inner-wrap h2 {
@@ -25,6 +30,7 @@
   border-right: none;
   border-bottom: 1px solid white;
   background-color: rgba(16, 38, 84, 1);
+  color: white;
 
   &::placeholder {
     font-size: 14px;

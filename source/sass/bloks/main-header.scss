@@ -5,9 +5,9 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1366px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding: 31px 103px 0;
+  padding: 31px 0 0;
 }
 
 .main-header__phone-link {
@@ -40,7 +40,7 @@
 @media only screen and (max-width: 1199px) {
   .main-header {
     max-width: 768px;
-    padding: 41px 45px 0;
+    padding: 41px 0 0;
   }
 
   .main-header__phone-link {
@@ -52,7 +52,7 @@
 @media only screen and (max-width: 767px) {
   .main-header {
     max-width: 320px;
-    padding: 20px 15px 0;
+    padding: 20px 0 0;
   }
 
   .main-header__logo-img {

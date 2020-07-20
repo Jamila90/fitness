@@ -1,4 +1,4 @@
-/* Слайдер */
+/* Слайдер общие стили */
 .slick-slider {
   display: flex;
   justify-content: space-between;
@@ -16,24 +16,85 @@
 }
 
 /* Слайд активный (показывается) */
-.slick-slide.slick-active h3 {
-  position: absolute;
-  bottom: 32px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  color: white;
-  visibility: visible;
+//.slick-slide.slick-active {
+//
+//}
+//
+//.slick-slide.slick-active {
+//
+//}
+
+/* Слайдер тренеры*/
+.trainers__list-wrap {
+  position: relative;
 }
 
-.slick-slide.slick-active {
-  &:hover h3 {
-    visibility: hidden;
-  }
-}
-
-/* Стрелка */
-.slick-arrow {
+.trainers__list-wrap .slick-arrow {
   position: absolute;
   font-size: 0;
+  z-index: 10;
 }
+
+.trainers__list-wrap .slick-prev {
+  top: 45%;
+  left: -50px;
+  width: 16px;
+  height: 32px;
+  background-color: transparent;
+  background-image: url("../img/icon-arrow-left.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 32px;
+  border: none;
+  cursor: pointer;
+}
+
+.trainers__list-wrap .slick-next {
+  right: -50px;
+  top: 45%;
+  width: 16px;
+  height: 32px;
+  background-color: transparent;
+  background-image: url("../img/icon-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 32px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Слайдер отзывы */
+.customer-reviews__wrap {
+  position: relative;
+}
+
+.customer-reviews__wrap .slick-arrow {
+  position: absolute;
+  font-size: 0;
+  z-index: 10;
+}
+
+.customer-reviews__wrap .slick-prev {
+  top: 45%;
+  left: -50px;
+  width: 16px;
+  height: 32px;
+  background-color: transparent;
+  background-image: url("../img/icon-arrow-left.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 32px;
+  border: none;
+  cursor: pointer;
+}
+
+.customer-reviews__wrap .slick-next {
+  right: -50px;
+  top: 45%;
+  width: 16px;
+  height: 32px;
+  background-color: transparent;
+  background-image: url("../img/icon-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 32px;
+  border: none;
+  cursor: pointer;
+}
+

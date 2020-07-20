@@ -1,11 +1,10 @@
-.contacts {
-  max-width: 1366px;
-  margin: 0 auto;
-}
-
 .contacts__wrap {
   width: 100%;
-  padding: 80px 76px 40px 122px;
+  padding: 80px 76px 45px 122px;
+}
+
+.contacts__inner-wrap {
+  max-width: 485px;
 }
 
 .contacts__wrapper {
@@ -54,11 +53,6 @@
 }
 
 @media only screen and (max-width: 1199px) {
-  .contacts {
-    max-width: 768px;
-    margin: 0 auto;
-  }
-
   .contacts__wrap {
     padding: 80px 76px 30px 135px;
   }
@@ -90,10 +84,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .contacts {
-    max-width: 320px;
-  }
-
   .contacts__wrap {
     padding: 75px 15px 45px 15px;
   }
