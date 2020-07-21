@@ -67,6 +67,7 @@
 
   .form__inner-wrap {
     max-width: 480px;
+    margin: 0 auto;
   }
 
   .form__inner-wrap h2 {
@@ -104,11 +105,11 @@
 
 @media only screen and (max-width: 767px) {
   .form {
-    padding: 70px 15px 66px 15px;
+    padding: 70px 0 66px;
   }
 
   .form__inner-wrap {
-    width: 100%;
+    width: 290px
   }
 
   .form__inner-wrap h2 {

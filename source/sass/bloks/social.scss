@@ -19,3 +19,14 @@
     opacity: 0.3;
   }
 }
+
+@media only screen and (max-width: 1199px) {
+  .social {
+    width: 102px;
+    justify-content: space-between;
+  }
+
+  .social__item {
+    padding-right: 0;
+  }
+}

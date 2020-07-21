@@ -580,7 +580,8 @@ select {
   .contacts__wrap {
     padding: 80px 76px 40px 135px; }
   .contacts__inner-wrap {
-    max-width: 555px; }
+    max-width: 555px;
+    margin: 0 auto; }
   .contacts__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -604,9 +605,11 @@ select {
 
 @media only screen and (max-width: 767px) {
   .contacts__wrap {
-    padding: 75px 15px 45px 15px; }
+    padding: 75px 0 45px; }
   .contacts__heading {
     font-size: 32px; }
+  .contacts__inner-wrap {
+    width: 290px; }
   .contacts__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -714,8 +717,8 @@ select {
 
 @media only screen and (max-width: 1199px) {
   .footer-page__wrap {
-    max-width: 768px;
-    padding: 43px 44px; } }
+    max-width: 678px;
+    padding: 43px 0; } }
 
 @media only screen and (max-width: 767px) {
   .footer-page__wrap {
@@ -791,7 +794,8 @@ select {
     width: 100%;
     padding: 78px 160px 70px 130px; }
   .form__inner-wrap {
-    max-width: 480px; }
+    max-width: 480px;
+    margin: 0 auto; }
   .form__inner-wrap h2 {
     margin: 0 0 25px;
     font-size: 42px; }
@@ -820,9 +824,9 @@ select {
 
 @media only screen and (max-width: 767px) {
   .form {
-    padding: 70px 15px 66px 15px; }
+    padding: 70px 0 66px; }
   .form__inner-wrap {
-    width: 100%; }
+    width: 290px; }
   .form__inner-wrap h2 {
     font-size: 32px;
     letter-spacing: 1px;
@@ -2080,6 +2084,15 @@ select {
     opacity: 0.7; }
   .social__item:active, .social__item:focus {
     opacity: 0.3; }
+
+@media only screen and (max-width: 1199px) {
+  .social {
+    width: 102px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .social__item {
+    padding-right: 0; } }
 
 .trainers__wrap {
   max-width: 1160px;
