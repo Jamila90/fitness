@@ -161,27 +161,24 @@
 }
 
 @media only screen and (max-width: 1199px) {
-  .gym-membership {
-    padding: 106px 163px 98px;
-
-    &::before {
-      right: 0;
-      bottom: 0;
-      width: 347px;
-      height: 444px;
-      background-image: url("../img/rogue-tablet.png");
-      background-repeat: no-repeat;
-      background-size: 347px 444px;
-      background-position: 0 0;
-    }
+  .gym-membership::before {
+    right: 0;
+    bottom: -125px;
+    width: 347px;
+    height: 444px;
+    background-image: url("../img/rogue-tablet.png");
+    background-repeat: no-repeat;
+    background-size: 347px 444px;
+    background-position: 0 0;
   }
 
   .gym-membership__wrap {
-    max-width: 768px;
+    max-width: 678px;
+    padding: 108px 118px 100px;
   }
 
   .gym-membership__title {
-    margin: 0 0 42px;
+    margin: 0 0 32px;
     font-size: 42px;
   }
 
@@ -190,13 +187,15 @@
   }
 
   .gym-membership__list {
-    width: 61%;
+    width: 78%;
+    font-size: 18px;
   }
 
   .gym-membership__item-card {
     width: 100%;
     margin: 0 auto 35px;
     padding: 64px 109px 60px;
+    background-position: 267px 212px;
 
     &:last-child {
       margin-bottom: 0;
@@ -205,28 +204,33 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .gym-membership {
-    padding: 72px 0;
+  .gym-membership::before {
+    display: none;
   }
 
   .gym-membership__wrap {
-    max-width: 320px;
+    max-width: 290px;
+    padding: 75px 0;
   }
 
   .gym-membership__title {
-    margin: 0 0 23px;
+    margin: 0 0 16px;
     font-size: 32px;
   }
 
   .gym-membership__list {
-    width: 90%;
+    width: 290px;
     font-size: 16px;
   }
 
   .gym-membership__item-card {
-    width: 90%;
+    width: 100%;
     padding: 42px 33px 49px;
     margin: 0 auto 39px;
+    background-image: url("../img/rub-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 24px 33px;
+    background-position: 180px 170px;
   }
 
   .gym-membership__heading {

@@ -117,12 +117,9 @@
 }
 
 @media only screen and (max-width: 1199px) {
-  .offer {
-    padding: 108px 45px 100px;
-  }
-
   .offer__wrapper {
-    max-width: 768px;
+    max-width: 678px;
+    padding: 108px 0 100px;
   }
 
   .offer__heading {
@@ -163,12 +160,9 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .offer {
-    padding: 85px 15px 60px;
-  }
-
   .offer__wrapper {
-    max-width: 320px;
+    max-width: 290px;
+    padding: 70px 0 60px;
   }
 
   .offer__heading {
@@ -177,13 +171,13 @@
 
   .offer__price {
     flex-direction: column;
-    margin-bottom: 23px;
+    margin-bottom: 28px;
   }
 
   .offer__price-text {
     width: 100%;
     align-items: center;
-    padding: 44px 15px 44px 15px;
+    padding: 48px 15px;
     text-align: center;
   }
 
@@ -193,7 +187,7 @@
 
   .offer__price-text p {
     width: 80%;
-    margin-bottom: 28px;
+    margin-bottom: 19px;
   }
 
   .offer__sale-list {

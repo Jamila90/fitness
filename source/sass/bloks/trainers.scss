@@ -10,10 +10,6 @@
   letter-spacing: 1px;
 }
 
-.trainers__container {
-  overflow: hidden;
-}
-
 .trainers__info-list {
   position: absolute;
   top: 0;
@@ -108,12 +104,9 @@
 }
 
 @media only screen and (max-width: 1199px) {
-  .trainers {
-    padding: 6px 102px 90px;
-  }
-
   .trainers__wrap {
-    max-width: 768px;
+    max-width: 678px;
+    padding: 6px 0 90px;
   }
 
   .trainers__heading {
@@ -122,18 +115,24 @@
     text-align: center;
   }
 
+  .trainers__container {
+    width: 566px;
+    margin: 0 auto;
+  }
+
   .trainers__item-slide {
     margin-right: 0;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .trainers {
-    padding: 15px 45px 90px;
+  .trainers__wrap {
+    max-width: 290px;
+    padding: 15px 0 60px;
   }
 
-  .trainers__wrap {
-    max-width: 320px;
+  .trainers__container {
+    width: 226px;
   }
 
   .trainers__heading {

@@ -104,12 +104,9 @@
 }
 
 @media only screen and (max-width: 1199px) {
-  .our-advantages {
-    padding: 111px 45px 0 45px;
-  }
-
   .our-advantages__wrap {
-    max-width: 768px;
+    max-width: 678px;
+    padding: 108px 0 0;
   }
 
   .our-advantages__heading {
@@ -171,16 +168,14 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .our-advantages {
-    padding: 48px 0 0;
-  }
-
   .our-advantages__wrap {
     max-width: 320px;
+    padding: 75px 0 0;
   }
 
   .our-advantages__heading {
     font-size: 32px;
+    letter-spacing: 1px;
   }
 
   .our-advantages__list {
@@ -195,7 +190,7 @@
     margin-bottom: 40px;
 
     &:not(:nth-last-child(n+3)) {
-      margin-bottom: 47px;
+      margin-bottom: 40px;
     }
   }
 
@@ -216,7 +211,7 @@
     left: 0;
     top: 27%;
     width: 100%;
-    margin-bottom: 45px;
+    margin-bottom: 23px;
     padding: 58px 0 42px;
   }
 

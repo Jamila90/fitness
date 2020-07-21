@@ -37,9 +37,9 @@
 }
 
 @media only screen and (max-width: 1199px) {
-  .customer-reviews {
-    max-width: 768px;
-    padding: 8px 100px 97px;
+  .customer-reviews__wrapper {
+    max-width: 678px;
+    padding: 8px 55px 97px;
   }
 
   .customer-reviews__heading {
@@ -59,17 +59,22 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .customer-reviews {
-    max-width: 320px;
-    padding: 16px 45px 65px;
+  .customer-reviews__wrapper {
+    max-width: 290px;
+    padding: 16px 0 70px;
   }
 
   .customer-reviews__heading {
     font-size: 32px;
   }
 
-  .customer-reviews__wrap {
-    padding: 53px 25px 27px 26px;
+  .customer-reviews__container {
+    width: 226px;
+    margin: 0 auto;
+  }
+
+  .customer-reviews__slide {
+    padding: 50px 25px 25px;
     background-image: url("../img/comment-img-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: 68px 68px;

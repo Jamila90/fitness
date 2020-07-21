@@ -105,18 +105,20 @@
 
 @media only screen and (max-width: 1199px) {
   .intro {
-    padding: 141px 206px 106px 55px;
     background-image: url("../img/background-tablet@1x.png");
     background-size: cover;
     background-position: 0 0;
   }
 
   .intro__wrap {
-    max-width: 768px;
+    max-width: 678px;
+    padding: 82px 0 76px 0;
   }
 
   .intro__wrapper {
-    width: 63%;
+    width: 74%;
+    padding-top: 59px;
+    margin-right: 30px;
   }
 
   .intro__heading {
@@ -124,21 +126,23 @@
     margin: 0 0 35px;
     font-size: 86px;
     line-height: 90px;
+    letter-spacing: 3px;
   }
 
   .intro__title {
     margin-bottom: 9px;
     font-size: 34px;
+    letter-spacing: 1px;
   }
 
   .intro__description {
     left: -25px;
-    bottom: 120px;
-    width: 40%;
+    bottom: 148px;
+    width: 42%;
   }
 
   .intro__link {
-    width: 193px;
+    width: 185px;
   }
 
   .intro__social {
@@ -150,15 +154,16 @@
   .intro {
     background-image: url("../img/background-mobile@1x.png");
     background-size: cover;
-    padding: 116px 15px 80px 15px;
   }
 
   .intro__wrap {
-    max-width: 320px;
+    max-width: 290px;
+    padding: 55px 0 79px;
   }
 
   .intro__wrapper {
-    width: 291px;
+    width: 290px;
+    margin-right: 0;
   }
 
   .intro__heading {
@@ -175,6 +180,7 @@
 
   .intro__description {
     left: -9px;
+    bottom: 115px;
   }
 
   .intro__link {

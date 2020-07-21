@@ -54,7 +54,15 @@
 
 @media only screen and (max-width: 1199px) {
   .contacts__wrap {
-    padding: 80px 76px 30px 135px;
+    padding: 80px 76px 40px 135px;
+  }
+
+  .contacts__inner-wrap {
+    max-width: 555px;
+  }
+
+  .contacts__wrapper {
+    flex-direction: column;
   }
 
   .contacts__heading {
@@ -64,7 +72,7 @@
 
   .contacts__item {
     width: 44%;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
 
   .contacts__item h3 {

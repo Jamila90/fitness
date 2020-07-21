@@ -75,12 +75,8 @@
   .gym__wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 768px;
-    padding: 48px 44px 28px;
-  }
-
-  .gym-membership {
-    padding: 110px 103px 120px;
+    max-width: 678px;
+    padding: 48px 0 28px;
   }
 
   .gym__text {
@@ -105,6 +101,14 @@
     display: none;
   }
 
+  .gym__img {
+    width: 100%;
+  }
+
+  .gym__image-wrap {
+    padding-bottom: 150px;
+  }
+
   .gym__play {
     height: 167px;
     left: 207px;
@@ -114,7 +118,7 @@
 
   .gym__play-btn {
     left: 50%;
-    bottom: 82px;
+    bottom: 84px;
     width: 73px;
     height: 73px;
     background-size: 73px 73px;

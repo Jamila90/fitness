@@ -61,6 +61,30 @@
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1199px) {
+  .trainers__list-wrap .slick-prev {
+    top: 42%;
+    left: -55px;
+  }
+
+  .trainers__list-wrap .slick-next {
+    top: 42%;
+    right: -55px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .trainers__list-wrap .slick-prev {
+    top: 43%;
+    left: -35px;
+  }
+
+  .trainers__list-wrap .slick-next {
+    top: 43%;
+    right: -35px;
+  }
+}
+
 /* Слайдер отзывы */
 .customer-reviews__wrap {
   position: relative;
@@ -96,5 +120,17 @@
   background-size: 16px 32px;
   border: none;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .customer-reviews__wrap .slick-prev {
+    top: 45%;
+    left: -33px;
+  }
+
+  .customer-reviews__wrap .slick-next {
+    top: 45%;
+    right: -33px;
+  }
 }
 
