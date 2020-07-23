@@ -6,10 +6,9 @@ $(document).ready(function () {
     if (!$(evt.target).hasClass(`gym-membership__item--active`)) {
       let i = $(evt.target).parent().index();
       $(`.gym-membership__list li button.gym-membership__item--active`).removeClass(`gym-membership__item--active`);
-      $(`.gym-membership__list-card .gym-membership__item-card`).removeClass(`gym-membership__item-card--active`);
+      $(`.gym-membership__list-card`).removeClass(`gym-membership__list-card--active`);
       $(evt.target).addClass(`gym-membership__item--active`);
-      console.log($(`.gym-membership__list-card`).eq(i).addClass(`gym-membership__item-card--active`))
-      $(`.gym-membership__item-card`).eq(i).addClass(`gym-membership__item-card--active`);
+      $(`.gym-membership__list-card`).eq(i).addClass(`gym-membership__list-card--active`);
     }
   });
 
@@ -48,29 +47,14 @@ $(document).ready(function () {
     speed: 800,
     draggable: false,
     infinite: true
-    // responsive: [
-    //   {
-    //     breakpoint: 1199,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 767,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1
-    //     }
-    //   }
-    // ]
   });
+});
 
-
+$(document).ready(function () {
   $(`.timetable__current-option`).on(`click`, function () {
     $(`.timetable__custom-option`).toggle();
-    $(`.timetable__workout-item`).hide().style(`visibility: hidden`);
-    $(`.timetable__workout-item--time`).show(`opacity: 0.3`);
+    $(`.timetable__workout-item`).toggleClass(`timetable__workout-item--hide`);
+    $(`.timetable__workout-time`).toggleClass(`timetable__workout-time--hide`);
   });
 
 // Показ и скрытие списка у кастомного селекта
@@ -80,10 +64,11 @@ $(document).ready(function () {
     $(`select`).val(choosenValue).prop(`selected`, true);
     $(`.timetable__current-option`)
       .data(`value`, choosenValue)
-      .find(`span`)
+      .find(`span`, ``)
       .text(choosenText);
     $(`.timetable__custom-option`).hide();
-    $(`.timetable__workout-item`).show();
+    $(`.timetable__workout-item`).removeClass(`timetable__workout-item--hide`);
+    $(`.timetable__workout-time`).removeClass(`timetable__workout-time--hide`);
   });
 
 // Стрелка вниз/вверх у кастомного селекта
@@ -91,7 +76,10 @@ $(document).ready(function () {
     $(evt.target)
       .toggleClass(`timetable__img--up`)
       .siblings(`timetable__img--up`)
+      .toggleClass(`timetable__workout-item--hide`)
+      .toggleClass(`timetable__workout-time--hide`)
       .slideToggle();
+
   });
 
 
@@ -101,6 +89,6 @@ $(document).ready(function () {
         .css(`background-color`, `rgba(237, 2, 51, 1)`);
     },
     function (evt) {
-      $(evt.target).css(`border`, `none`).css(`background-color`, `rgba(248, 249, 252, 1)`).css(`color`, `rgba(28, 51, 116, 1)`);
+      $(evt.target).css(`border`, ``).css(`background-color`, ``).css(`color`, ``);
     });
 });
