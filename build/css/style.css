@@ -516,9 +516,19 @@ select {
     .timetable__custom-option li:last-child {
       border-bottom: none; }
   .timetable__current-option span {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
     width: 100%;
     padding-left: 40px;
     font-family: "Roboto Condensed", "Arial", sans-serif; }
@@ -1547,6 +1557,11 @@ select {
     width: 68px; }
   .main-header__phone-link {
     font-size: 20px; } }
+
+.main-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
 
 .nav {
   display: -webkit-box;

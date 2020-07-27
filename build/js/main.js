@@ -83,6 +83,8 @@ $(document).ready(function () {
     $(evt.target).css(`border`, `2px solid`, `rgba(237, 2, 51, 1)`).css(`background-color`, `white`).css(`color`, `rgba(237, 2, 51, 1)`);
     const column = $(evt.target).data(`column`);
     const row = $(evt.target).data(`row`);
+    const value = $(evt.target).data(`value`);
+    const index = $(evt.target).data(`index`);
     $(`.timetable__workout-wrap`)
         .find(`.timetable__days-list`)
         .find(`td:nth-child(${column})`)
@@ -90,12 +92,21 @@ $(document).ready(function () {
     $(`.timetable__workout-wrap`)
         .find(`tr:nth-child(${row + 1})`)
         .find(`.timetable__workout-time`)
+        .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
+      $(`.timetable__select-custom`)
+        .find(`.timetable__custom-option`)
+        .find(`li:nth-child(${value})`)
+        .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
+      $(`.timetable__current-option`)
+        .find(`span`, `${index}`)
         .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
   },
   function (evt) {
     $(evt.target).css(`border`, ``).css(`background-color`, ``).css(`color`, ``);
     const column = $(evt.target).data(`column`);
     const row = $(evt.target).data(`row`);
+    const value = $(evt.target).data(`value`);
+    const index = $(evt.target).data(`index`);
     $(`.timetable__workout-wrap`)
         .find(`.timetable__days-list`)
         .find(`td:nth-child(${column})`)
@@ -104,5 +115,12 @@ $(document).ready(function () {
         .find(`tr:nth-child(${row + 1})`)
         .find(`.timetable__workout-time`)
         .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
+    $(`.timetable__select-custom`)
+      .find(`.timetable__custom-option`)
+      .find(`li:nth-child(${value})`)
+      .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
+    $(`.timetable__current-option`)
+      .find(`span`, `${index}`)
+      .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
   });
 });

@@ -281,7 +281,13 @@ select {
   }
 
   .timetable__current-option span {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
     width: 100%;
     padding-left: 40px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
