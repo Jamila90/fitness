@@ -15,7 +15,11 @@
 }
 
 .promo__visual-content {
-  width: 56%;
+  width: 57%;
+  background-image: url("../img/super-games-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 660px 500px;
+  background-position: 0 0;
 }
 
 .promo__heading {
@@ -130,7 +134,7 @@
 
   .promo__text-content {
     width: 44%;
-    padding: 42px 46px 25px 44px;
+    padding: 42px 46px 50px 44px;
   }
 
   .promo__heading {
@@ -177,13 +181,21 @@
     padding-bottom: 8px;
     font-size: 10px;
   }
+
+  .promo__visual-content {
+    width: 56%;
+    background-image: url("../img/super-games-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 386px 294px;
+    background-position: 0 0;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .promo__wrapper {
     flex-direction: column;
     max-width: 290px;
-    padding: 70px 0 53px;
+    padding: 70px 0 63px;
   }
 
   .promo__text-content {
@@ -217,5 +229,10 @@
 
   .promo__visual-content {
     width: 100%;
+    height: 292px;
+    background-image: url("../img/super-games-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 290px 292px;
+    background-position: 0 0;
   }
 }

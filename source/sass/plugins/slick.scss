@@ -53,12 +53,12 @@
 }
 
 .trainers__list-wrap .slick-slide {
-  width: 260px !important; //Использовала для переопределения стилей плагина
-  height: 294px !important;
+  width: 260px !important; /* stylelint-disable-line */  //Использовала для переопределения стилей плагина
+  height: 294px !important; /* stylelint-disable-line */
 }
 
 .customer-reviews__wrap .slick-slide {
-  width: 566px !important; //Использовала для переопределения стилей плагина
+  width: 566px !important; /* stylelint-disable-line */  //Использовала для переопределения стилей плагина
 }
 
 /* Слайдер отзывы */
@@ -110,7 +110,7 @@
   }
 
   .trainers__list-wrap .slick-slide {
-    width: 268px !important; //Использовала для переопределения стилей плагина
+    width: 268px !important; /* stylelint-disable-line */  //Использовала для переопределения стилей плагина
   }
 }
 
@@ -126,8 +126,8 @@
   }
 
   .trainers__list-wrap .slick-slide {
-    width: 226px !important; //Использовала для переопределения стилей плагина
-    height: 274px !important;
+    width: 226px !important; /* stylelint-disable-line */  //Использовала для переопределения стилей плагина
+    height: 274px !important; /* stylelint-disable-line */
   }
 
   .customer-reviews__wrap .slick-prev {

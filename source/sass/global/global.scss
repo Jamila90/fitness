@@ -5,12 +5,16 @@
 }
 
 html {
+  height: 100%;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 body {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -22,10 +26,6 @@ body {
   color: rgba(16, 38, 84, 1);
 }
 
-li {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -34,18 +34,4 @@ img {
   height: auto;
   max-width: 100%;
   border-style: none;
-}
-
-h3 {
-  margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-p {
-  margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-span {
-  font-family: "Roboto Condensed", sans-serif;
 }

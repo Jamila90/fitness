@@ -1,7 +1,7 @@
 .trainers__wrap {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 6px 0 110px;
+  padding: 10px 0 110px;
 }
 
 .trainers__heading {
@@ -25,7 +25,7 @@
 
 .trainers__info-item {
   margin-bottom: 11px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   text-align: left;
   list-style: disc;
@@ -34,6 +34,7 @@
 
 .trainers__info-item h4 {
   margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   visibility: hidden;
 }
 
@@ -68,6 +69,8 @@
   bottom: 32px;
   left: 0;
   right: 0;
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   text-align: center;
   color: white;
   visibility: visible;
@@ -94,6 +97,7 @@
 }
 
 .trainers__img {
+  height: 100%;
   object-fit: cover;
 
   &:hover {
@@ -128,7 +132,7 @@
 @media only screen and (max-width: 767px) {
   .trainers__wrap {
     max-width: 290px;
-    padding: 15px 0 72px;
+    padding: 15px 0 69px;
   }
 
   .trainers__container {

@@ -2,12 +2,12 @@
   display: flex;
   max-width: 1160px;
   margin: 0 auto;
-  padding: 120px 0 45px;
+  padding: 123px 0 225px;
 }
 
 .gym__text {
   width: 43%;
-  padding: 59px 0 0 59px;
+  padding: 59px 0 40px 59px;
 }
 
 .gym__heading {
@@ -31,7 +31,23 @@
 
 .gym__image-wrap {
   position: relative;
-  padding-bottom: 181px;
+  width: 57%;
+  background-image: url("../img/gym-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 660px 401px;
+  background-position: 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -107px;
+    left: -61px;
+    width: 364px;
+    height: 228px;
+    background-image: url("../img/gym-video-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 364px 228px;
+  }
 }
 
 .gym__play {
@@ -46,7 +62,7 @@
 .gym__play-btn {
   position: absolute;
   left: 18%;
-  bottom: 88px;
+  bottom: -92px;
   width: 100px;
   height: 100px;
   font-size: 0;
@@ -76,7 +92,7 @@
     display: flex;
     flex-direction: column;
     max-width: 678px;
-    padding: 48px 0 28px;
+    padding: 48px 0 183px;
   }
 
   .gym__text {
@@ -99,6 +115,7 @@
 
   .gym__text span {
     display: none;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
   }
 
   .gym__img {
@@ -106,7 +123,22 @@
   }
 
   .gym__image-wrap {
-    padding-bottom: 150px;
+    width: 100%;
+    height: 345px;
+    background-image: url("../img/gym-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 678px 345px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -84px;
+      left: 207px;
+      width: 266px;
+      height: 167px;
+      background-image: url("../img/gym-video-tablet@1x.jpg");
+      background-size: 266px 167px;
+    }
   }
 
   .gym__play {
@@ -118,7 +150,7 @@
 
   .gym__play-btn {
     left: 50%;
-    bottom: 84px;
+    bottom: -70px;
     width: 73px;
     height: 73px;
     background-size: 73px 73px;
@@ -128,11 +160,27 @@
 @media only screen and (max-width: 767px) {
   .gym__wrapper {
     max-width: 320px;
-    padding: 69px 0 210px;
+    padding: 69px 0 275px;
   }
 
   .gym__image-wrap {
+    width: 100%;
+    height: 313px;
     padding-bottom: 60px;
+    background-image: url("../img/gym-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 320px 313px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -208px;
+      left: 0;
+      width: 320px;
+      height: 167px;
+      background-image: url("../img/gym-video-mobile@1x.jpg");
+      background-size: 320px 167px;
+    }
   }
 
   .gym__text {
@@ -168,6 +216,6 @@
   }
 
   .gym__play-btn {
-    bottom: -127px;
+    bottom: -195px;
   }
 }

@@ -24,6 +24,7 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .contacts__item {
@@ -32,14 +33,21 @@
 }
 
 .contacts__item h3 {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
 }
 
 .contacts__item p {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
 }
 
 .contacts__item a {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  letter-spacing: -1px;
   color: rgba(16, 38, 84, 1);
 
   &:hover {
@@ -87,7 +95,7 @@
 
   .contacts__item a {
     font-size: 18px;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     letter-spacing: 0.5px;
   }
 }
@@ -100,6 +108,7 @@
   .contacts__heading {
     font-size: 32px;
   }
+
   .contacts__inner-wrap {
     width: 290px;
   }
@@ -111,5 +120,21 @@
   .contacts__item {
     width: 100%;
     margin-bottom: 23px;
+  }
+
+  .contacts__item--one {
+    order: 1;
+  }
+
+  .contacts__item--two {
+    order: 3;
+  }
+
+  .contacts__item--three {
+    order: 2;
+  }
+
+  .contacts__item--four {
+    order: 4;
   }
 }

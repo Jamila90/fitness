@@ -195,9 +195,10 @@ select {
   .timetable__workout-item {
     width: 100%;
     height: 79px;
+    opacity: 0;
 
     &--hide {
-      opacity: 0;
+      opacity: 1;
     }
   }
 
@@ -205,9 +206,10 @@ select {
     width: 70px;
     height: 80px;
     border: 2px solid rgba(28, 51, 116, 1);
+    opacity: 0.5;
 
     &--hide {
-      opacity: 0.5;
+      opacity: 1;
     }
   }
 
@@ -282,6 +284,7 @@ select {
     display: flex;
     width: 100%;
     padding-left: 40px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
   }
 
   .timetable__img {
