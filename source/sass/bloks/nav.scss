@@ -15,6 +15,7 @@
   padding-left: 14px;
   padding-right: 28px;
   font-size: 14px;
+  list-style: none;
 
   &:first-child {
     padding-left: 0;
@@ -41,7 +42,7 @@
 
 @media only screen and (max-width: 1199px) {
   .nav {
-    width: 79%;
+    width: 80%;
   }
 
   .nav__item {

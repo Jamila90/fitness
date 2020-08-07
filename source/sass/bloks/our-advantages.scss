@@ -27,9 +27,9 @@
 
 .our-advantages__item {
   display: flex;
-  width: 35%;
+  width: 36%;
   margin-bottom: 80px;
-  padding: 0 0 75px 25px;
+  padding: 0 0 74px 28px;
   border-bottom: 1px solid rgba(209, 10, 66, 0.2);
 
   &:not(:nth-last-child(n+3)) {
@@ -41,11 +41,7 @@
 .our-advantages__num-wrap {
   display: flex;
   flex-direction: column;
-  margin-right: 28px;
-  padding-top: 16px;
-  background: linear-gradient(to right, rgba(209, 10, 66, 1), rgba(0, 65, 202, 1));
-  -webkit-background-clip: text; /*stylelint-disable-line*/
-  -webkit-text-fill-color: transparent;
+  margin-right: 32px;
 }
 
 .our-advantages__descr-wrap {
@@ -65,14 +61,20 @@
 }
 
 .our-advantages__num {
-  margin-bottom: 17px;
+  height: 55px;
+  padding-top: 17px;
   font-size: 71px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
+  background: linear-gradient(to right, rgba(209, 10, 66, 1), rgba(0, 65, 202, 1));
+  -webkit-background-clip: text; /*stylelint-disable-line*/
+  -webkit-text-fill-color: transparent;
+  color: rgba(0, 65, 202, 1);
 }
 
 .our-advantages__num--100 {
-  margin-bottom: 36px;
+  margin-bottom: 20px;
+  -webkit-text-fill-color: white; /*stylelint-disable-line*/
   color: white;
 }
 
@@ -82,6 +84,9 @@
 .our-advantages__years {
   font-size: 14px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  background: linear-gradient(to right, rgba(209, 10, 66, 1), rgba(0, 65, 202, 1));
+  -webkit-background-clip: text; /*stylelint-disable-line*/
+  -webkit-text-fill-color: transparent;
 }
 
 .our-advantages__item--exercise-machines {
@@ -92,7 +97,7 @@
   flex-direction: column;
   align-items: center;
   width: 20%;
-  padding: 73px 0 58px;
+  padding: 62px 0 58px;
   background-color: rgba(28, 51, 116, 1);
 }
 
@@ -129,8 +134,8 @@
   }
 
   .our-advantages__item {
-    width: 47%;
-    margin-bottom: 325px;
+    width: 48%;
+    margin-bottom: 322px;
     padding: 0;
     border-bottom: none;
 
@@ -140,12 +145,11 @@
   }
 
   .our-advantages__num {
-    margin-bottom: 8px;
     font-size: 58px;
   }
 
   .our-advantages__num--100 {
-    margin-bottom: 30px;
+    margin-bottom: 14px;
     font-size: 74px;
   }
 
@@ -163,7 +167,7 @@
     left: 17%;
     top: 20%;
     width: 65%;
-    padding: 58px 0 32px;
+    padding: 45px 0 37px;
     margin-bottom: 0;
   }
 
@@ -180,10 +184,11 @@
 @media only screen and (max-width: 767px) {
   .our-advantages__wrap {
     max-width: 320px;
-    padding: 75px 0 23px;
+    padding: 75px 0 45px;
   }
 
   .our-advantages__heading {
+    margin: 0 0 40px;
     font-size: 32px;
     letter-spacing: 1px;
   }
@@ -200,19 +205,23 @@
     margin-bottom: 45px;
 
     &:first-child {
-      margin-bottom: 40px;
+      margin-bottom: 22px;
     }
 
     &:not(:nth-last-child(n+3)) {
-      margin-bottom: 40px;
+      margin-bottom: 21px;
     }
   }
 
   .our-advantages__num-wrap {
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding-top: 12px;
     text-align: center;
+  }
+
+  .our-advantages__num {
+    padding-top: 12px;
   }
 
   .our-advantages__descr-wrap--one p {
@@ -230,8 +239,8 @@
     left: 0;
     top: 27%;
     width: 100%;
-    margin-bottom: 48px;
-    padding: 62px 0 42px;
+    margin-bottom: 31px;
+    padding: 44px 0 42px;
   }
 
   .our-advantages__item--exercise-machines h3 {
@@ -243,6 +252,6 @@
   }
 
   .our-advantages__num--100 {
-    margin-bottom: 24px;
+    margin-bottom: 8px;
   }
 }

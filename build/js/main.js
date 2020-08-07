@@ -25,14 +25,14 @@ $(document).ready(function () {
     infinite: true,
     responsive: [
       {
-        breakpoint: 1199,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
         }
       },
       {
-        breakpoint: 767,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -79,7 +79,7 @@ $(document).ready(function () {
         .slideToggle();
   });
 
-  $(`.timetable__workout-item`).hover(function (evt) {
+  $(`.timetable__workout-item button`).hover(function (evt) {
     $(evt.target).css(`border`, `2px solid`, `rgba(237, 2, 51, 1)`).css(`background-color`, `white`).css(`color`, `rgba(237, 2, 51, 1)`);
     const column = $(evt.target).data(`column`);
     const row = $(evt.target).data(`row`);
@@ -93,11 +93,11 @@ $(document).ready(function () {
         .find(`tr:nth-child(${row + 1})`)
         .find(`.timetable__workout-time`)
         .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
-      $(`.timetable__select-custom`)
+    $(`.timetable__select-custom`)
         .find(`.timetable__custom-option`)
         .find(`li:nth-child(${value})`)
         .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
-      $(`.timetable__current-option`)
+    $(`.timetable__current-option`)
         .find(`span`, `${index}`)
         .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
   },
@@ -116,11 +116,11 @@ $(document).ready(function () {
         .find(`.timetable__workout-time`)
         .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
     $(`.timetable__select-custom`)
-      .find(`.timetable__custom-option`)
-      .find(`li:nth-child(${value})`)
-      .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
+        .find(`.timetable__custom-option`)
+        .find(`li:nth-child(${value})`)
+        .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
     $(`.timetable__current-option`)
-      .find(`span`, `${index}`)
-      .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
+        .find(`span`, `${index}`)
+        .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
   });
 });

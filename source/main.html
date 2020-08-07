@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitness</title>
+  <link rel="preload" href="./fonts/bebasneuebold.woff2" type="font/woff2" as="font" crossorigin="">
   <link rel="stylesheet" href="./css/style.min.css">
-  <link rel="preload" href="fonts/bebasneuebold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body>
 <header class="main-header">
   <a href="#" class="main-header__logo" role="link" aria-label="Ссылка логотипа страницы">
     <picture>
-      <source media="(max-width: 767px)" srcset="/img/logo-mobile.png">
-      <source media="(max-width: 1199px)" srcset="/img/logo-tablet.png">
+      <source media="(max-width: 767px)" srcset="img/logo-mobile.png">
+      <source media="(max-width: 1199px)" srcset="img/logo-tablet.png">
       <img src="img/logo-desktop.png" width="87" height="20" alt="Логотип сайта Фитнес" class="main-header__logo-img">
     </picture>
   </a>
@@ -71,7 +71,7 @@
           <span class="gym-membership__price">5000</span>
           <a href="#" class="gym-membership__link button" role="button" aria-label="Купить абонемент">Купить абонемент</a>
         </li>
-        <li class="gym-membership__item-card gym-membership__item-card--active">
+        <li class="gym-membership__item-card">
           <h3 class="gym-membership__heading">Дневной</h3>
           <p class="gym-membership__description">с 8:00 до 17:00</p>
           <span class="gym-membership__price-bg">1700</span>
@@ -94,7 +94,7 @@
           <span class="gym-membership__price">5000</span>
           <a href="#" class="gym-membership__link button" role="button" aria-label="Купить абонемент">Купить абонемент</a>
         </li>
-        <li class="gym-membership__item-card gym-membership__item-card--active">
+        <li class="gym-membership__item-card">
           <h3 class="gym-membership__heading">Дневной</h3>
           <p class="gym-membership__description">с 8:00 до 17:00</p>
           <span class="gym-membership__price-bg">1700</span>
@@ -117,7 +117,7 @@
           <span class="gym-membership__price">5000</span>
           <a href="#" class="gym-membership__link button" role="button" aria-label="Купить абонемент">Купить абонемент</a>
         </li>
-        <li class="gym-membership__item-card gym-membership__item-card--active">
+        <li class="gym-membership__item-card">
           <h3 class="gym-membership__heading">Дневной</h3>
           <p class="gym-membership__description">с 8:00 до 17:00</p>
           <span class="gym-membership__price-bg">1700</span>
@@ -168,7 +168,7 @@
           <div class="trainers__item-slide">
             <picture>
               <source type="image/webp" srcset="img/anna-desktop@1x.webp 1x, img/anna-desktop@2x.webp 2x">
-              <img src="img/anna-desktop@1x.jpg" srcset="img/anna-desktop@1x.jpg 1x, img/anna-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Анны" class="trainers__img">
+              <img src="../img/anna-desktop@1x.jpg" srcset="img/anna-desktop@1x.jpg 1x, img/anna-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Анны" class="trainers__img">
             </picture>
             <h3>Анна Павлова</h3>
             <ul class="trainers__info-list">
@@ -182,7 +182,7 @@
           <div class="trainers__item-slide">
             <picture>
               <source type="image/webp" srcset="img/aleksey-desktop@1x.webp 1x, img/aleksey-desktop@2x.webp 2x">
-              <img src="img/aleksey-desktop@1x.jpg" srcset="img/aleksey-desktop@1x.jpg 1x, img/aleksey-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Алексея" class="trainers__img">
+              <img src="../img/aleksey-desktop@1x.jpg" srcset="img/aleksey-desktop@1x.jpg 1x, img/aleksey-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Алексея" class="trainers__img">
             </picture>
             <h3>Алексей Лавров</h3>
             <ul class="trainers__info-list">
@@ -198,7 +198,7 @@
               <source type="image/webp" srcset="img/alex-mobile@1x.webp 1x, img/alex-mobile@2x.webp 2x">
               <source type="image/webp" srcset="img/alex-tablet@1x.webp 1x, img/alex-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/alex-desktop@1x.webp 1x, img/alex-desktop@2x.webp 2x">
-              <img src="img/alex-desktop@1x.jpg" srcset="img/alex-desktop@1x.jpg 1x, img/alex-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Александра" class="trainers__img">
+              <img src="../img/alex-desktop@1x.jpg" srcset="img/alex-desktop@1x.jpg 1x, img/alex-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Александра" class="trainers__img">
             </picture>
             <h3>Александр Пашков</h3>
             <ul class="trainers__info-list">
@@ -213,7 +213,7 @@
             <picture>
               <source type="image/webp" srcset="img/maria-tablet@1x.webp 1x, img/maria-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/maria-desktop@1x.webp 1x, img/maria-desktop@2x.webp 2x">
-              <img src="img/maria-desktop@1x.jpg" srcset="img/maria-desktop@1x.jpg 1x, img/maria-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Марии" class="trainers__img">
+              <img src="../img/maria-desktop@1x.jpg" srcset="img/maria-desktop@1x.jpg 1x, img/maria-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Марии" class="trainers__img">
             </picture>
             <h3>Мария Кетова</h3>
             <ul class="trainers__info-list">
@@ -227,7 +227,7 @@
           <div class="trainers__item-slide">
             <picture>
               <source type="image/webp" srcset="img/anna-desktop@1x.webp 1x, img/anna-desktop@2x.webp 2x">
-              <img src="img/anna-desktop@1x.jpg" srcset="img/anna-desktop@1x.jpg 1x, img/anna-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Анны" class="trainers__img">
+              <img src="../img/anna-desktop@1x.jpg" srcset="img/anna-desktop@1x.jpg 1x, img/anna-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Анны" class="trainers__img">
             </picture>
             <h3>Анна Павлова</h3>
             <ul class="trainers__info-list">
@@ -241,7 +241,7 @@
           <div class="trainers__item-slide">
             <picture>
               <source type="image/webp" srcset="img/aleksey-desktop@1x.webp 1x, img/aleksey-desktop@2x.webp 2x">
-              <img src="img/aleksey-desktop@1x.jpg" srcset="img/aleksey-desktop@1x.jpg 1x, img/aleksey-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Алексея" class="trainers__img">
+              <img src="../img/aleksey-desktop@1x.jpg" srcset="img/aleksey-desktop@1x.jpg 1x, img/aleksey-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Алексея" class="trainers__img">
             </picture>
             <h3>Алексей Лавров</h3>
             <ul class="trainers__info-list">
@@ -257,7 +257,7 @@
               <source type="image/webp" srcset="img/alex-mobile@1x.webp 1x, img/alex-mobile@2x.webp 2x">
               <source type="image/webp" srcset="img/alex-tablet@1x.webp 1x, img/alex-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/alex-desktop@1x.webp 1x, img/alex-desktop@2x.webp 2x">
-              <img src="img/alex-desktop@1x.jpg" srcset="img/alex-desktop@1x.jpg 1x, img/alex-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Александра" class="trainers__img">
+              <img src="../img/alex-desktop@1x.jpg" srcset="img/alex-desktop@1x.jpg 1x, img/alex-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Александра" class="trainers__img">
             </picture>
             <h3>Александр Пашков</h3>
             <ul class="trainers__info-list">
@@ -272,7 +272,7 @@
             <picture>
               <source type="image/webp" srcset="img/maria-tablet@1x.webp 1x, img/maria-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/maria-desktop@1x.webp 1x, img/maria-desktop@2x.webp 2x">
-              <img src="img/maria-desktop@1x.jpg" srcset="img/maria-desktop@1x.jpg 1x, img/maria-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Марии" class="trainers__img">
+              <img src="../img/maria-desktop@1x.jpg" srcset="img/maria-desktop@1x.jpg 1x, img/maria-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера Марии" class="trainers__img">
             </picture>
             <h3>Мария Кетова</h3>
             <ul class="trainers__info-list">
@@ -403,7 +403,7 @@
             </li>
             <li class="form__item">
               <label for="phone">Телефон</label>
-              <input type="tel" name="phone" pattern="7\/8([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" id="phone" title="Номер должен содержать 11 цифр и начинаться с 7 или 8" placeholder="Телефон" value="" maxlength="20" required>
+              <input type="tel" name="phone" pattern="7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="phone" title="Номер должен содержать 11 цифр и начинаться с 7 или 8" placeholder="Телефон" value="" maxlength="20" required>
             </li>
           </ul>
           <button class="form__btn button" type="submit">Отправить</button>
@@ -440,8 +440,8 @@
     <nav class="footer-page__nav nav">
       <a href="#" class="footer-page__logo" role="link" aria-label="Ссылка логотипа страницы">
         <picture>
-          <source media="(max-width: 767px)" srcset="/img/logo-mobile.png">
-          <source media="(max-width: 1199px)" srcset="/img/logo-tablet.png">
+          <source media="(max-width: 767px)" srcset="img/logo-mobile.png">
+          <source media="(max-width: 1199px)" srcset="img/logo-tablet.png">
           <img src="img/logo-desktop.png" width="87" height="20" alt="Логотип сайта Фитнес" class="footer-page__logo-img">
         </picture>
       </a>

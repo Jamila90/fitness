@@ -6,6 +6,7 @@
 /* Ограничивающая оболочка */
 .slick-list {
   width: 1160px;
+  height: auto;
   overflow: hidden;
 }
 /* Лента слайдов */
@@ -28,7 +29,7 @@
 
 .trainers__list-wrap .slick-prev {
   top: 45%;
-  left: -50px;
+  left: -20px;
   width: 16px;
   height: 32px;
   background-color: transparent;
@@ -40,7 +41,7 @@
 }
 
 .trainers__list-wrap .slick-next {
-  right: -50px;
+  right: -20px;
   top: 45%;
   width: 16px;
   height: 32px;
@@ -54,14 +55,18 @@
 
 .trainers__list-wrap .slick-slide {
   width: 260px !important; /* stylelint-disable-line */  //Использовала для переопределения стилей плагина
-  height: 294px !important; /* stylelint-disable-line */
-}
-
-.customer-reviews__wrap .slick-slide {
-  width: 566px !important; /* stylelint-disable-line */  //Использовала для переопределения стилей плагина
+  height: 294px;
 }
 
 /* Слайдер отзывы */
+.customer-reviews__wrap .slick-list {
+  background-color: rgba(28, 51, 116, 1);
+}
+
+.customer-reviews__wrap .slick-slide {
+  width: 566px !important;/* stylelint-disable-line */  //Использовала для переопределения стилей плагина
+}
+
 .customer-reviews__wrap {
   position: relative;
 }
@@ -110,7 +115,7 @@
   }
 
   .trainers__list-wrap .slick-slide {
-    width: 268px !important; /* stylelint-disable-line */  //Использовала для переопределения стилей плагина
+    //width: 268px !important; /* stylelint-disable-line */  //Использовала для переопределения стилей плагина
   }
 }
 
@@ -126,8 +131,8 @@
   }
 
   .trainers__list-wrap .slick-slide {
-    width: 226px !important; /* stylelint-disable-line */  //Использовала для переопределения стилей плагина
-    height: 274px !important; /* stylelint-disable-line */
+    //width: 226px !important; /* stylelint-disable-line */ //Использовала для переопределения стилей плагина
+    height: 274px;
   }
 
   .customer-reviews__wrap .slick-prev {

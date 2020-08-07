@@ -1,17 +1,22 @@
-.timetable {
+.timetable-content {
   padding: 130px 0;
 }
 
-.timetable__wrap {
+.timetable-content__wrap {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1366px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
-.timetable__workout-wrap--second {
-  display: none;
+.timetable__workout-item-wrap {
+  display: flex;
+}
+
+.timetable__workout-time-wrap {
+  padding: 0;
+  margin: 74px 0 0;
 }
 
 .timetable__workout-wrap--third {
@@ -22,24 +27,23 @@
   display: none;
 }
 
-.timetable__heading {
+.timetable-content__heading {
   margin: 0 0 65px;
   font-size: 52px;
   text-align: center;
 }
 
 .timetable__workout-wrap {
-  width: 96%;
-  padding: 0 65px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .timetable__days-list {
   display: flex;
   justify-content: space-between;
-  width: 98%;
+  width: 100%;
   margin: 0 auto 8px;
-  padding: 0 0 0 75px;
+  padding: 0;
 }
 
 .timetable__item {
@@ -49,39 +53,59 @@
   width: 148px;
   height: 66px;
   margin-right: 10px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  border: 1px solid rgba(28, 51, 116, 1);
+  border: 2px solid rgba(28, 51, 116, 1);
 
   &:last-child {
     margin-right: 0;
   }
 }
 
+.timetable__workout-list-wrap {
+  margin-left: 8px;
+}
+
 .timetable__workout-list {
   display: flex;
   justify-content: space-between;
-  width: 98%;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
 }
 
 .timetable__workout-item {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  list-style: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.timetable__workout-item button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 148px;
   height: 110px;
   margin-right: 9px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
+  border: none;
   background-color: rgba(248, 249, 252, 1);
   cursor: pointer;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.5;
   }
 }
 
@@ -92,11 +116,10 @@
   width: 65px;
   height: 110px;
   margin-bottom: 7px;
-  margin-right: 9px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  border: 1px solid rgba(28, 51, 116, 1);
+  border: 2px solid rgba(28, 51, 116, 1);
   background: none;
 
   &:last-child {
@@ -104,7 +127,7 @@
   }
 }
 
-select {
+.timetable__select {
   display: none;
 }
 
@@ -113,23 +136,27 @@ select {
 }
 
 @media only screen and (max-width: 1199px) {
-  .timetable {
+  .timetable-content {
     padding: 88px 0 0;
   }
 
-  .timetable__wrap {
+  .timetable-content__wrap {
     display: flex;
     flex-direction: row;
-    width: 93%;
+    max-width: 678px;
     padding: 0;
-    overflow: auto;
+  }
+
+  .timetable__workout-list-wrap {
+    width: 53%;
+    overflow-x: scroll;
 
     &::-webkit-scrollbar-track {
       background: rgba(254, 235, 239, 1);
     }
 
     &::-webkit-scrollbar {
-      width: 205px;
+      width: 190px;
       height: 5px;
     }
 
@@ -139,11 +166,17 @@ select {
     }
   }
 
-  .timetable__workout-wrap--second {
-    display: block;
+  .timetable__days-list {
+    margin: 0 0 8px;
+    padding: 0;
+    width: fit-content;
   }
 
-  .timetable__heading {
+  .timetable__workout-item {
+    margin-right: 11px;
+  }
+
+  .timetable-content__heading {
     margin: 0 0 47px;
     font-size: 45px;
   }
@@ -151,26 +184,14 @@ select {
   .timetable__workout-wrap {
     padding: 0;
   }
-
-  .timetable__item--5,
-  .timetable__item--6,
-  .timetable__item--7 {
-    display: none;
-  }
-
-  .timetable__workout-item--5,
-  .timetable__workout-item--6,
-  .timetable__workout-item--7 {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 767px) {
-  .timetable {
+  .timetable-content {
     padding: 72px 0 0;
   }
 
-  .timetable__heading {
+  .timetable-content__heading {
     font-size: 34px;
   }
 
@@ -261,7 +282,7 @@ select {
     width: 78%;
     margin: 0;
     padding: 0;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     border: 2px solid;
     border-top: none;
     z-index: 10;

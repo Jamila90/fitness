@@ -26,18 +26,18 @@
 
 @media only screen and (max-width: 1199px) {
   .social {
-    width: 102px;
+    width: 100px;
     justify-content: space-between;
   }
 
   .social__item {
-    padding-right: 0;
+    padding-right: 20px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .social {
-    width: 143px;
+    width: 165px;
   }
 
   .social__icon {

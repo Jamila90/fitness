@@ -224,22 +224,22 @@ img {
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("fonts/robotocondensedlight.woff2") format("woff2"), url("fonts/robotocondensedlight.woff") format("woff");
+  src: url("../fonts/robotocondensedlight.woff2") format("woff2"), url("../fonts/robotocondensedlight.woff") format("woff");
   font-weight: 300; }
 
 @font-face {
   font-family: "Bebas Neue";
-  src: url("fonts/bebasneueregular.woff2") format("woff2"), url("fonts/bebasneueregular.woff") format("woff");
+  src: url("../fonts/bebasneueregular.woff2") format("woff2"), url("../fonts/bebasneueregular.woff") format("woff");
   font-weight: 400; }
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("fonts/robotocondensedregular.woff2") format("woff2"), url("fonts/robotocondensedregular.woff") format("woff");
+  src: url("../fonts/robotocondensedregular.woff2") format("woff2"), url("../fonts/robotocondensedregular.woff") format("woff");
   font-weight: 400; }
 
 @font-face {
   font-family: "Bebas Neue";
-  src: url("fonts/bebasneuebold.woff2") format("woff2"), url("fonts/bebasneuebold.woff") format("woff");
+  src: url("../fonts/bebasneuebold.woff2") format("woff2"), url("../fonts/bebasneuebold.woff") format("woff");
   font-weight: 700; }
 
 .button {
@@ -253,10 +253,10 @@ img {
   border: 3px solid white;
   cursor: pointer; }
 
-.timetable {
+.timetable-content {
   padding: 130px 0; }
 
-.timetable__wrap {
+.timetable-content__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,11 +265,17 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  max-width: 1366px;
+  max-width: 1160px;
   margin: 0 auto; }
 
-.timetable__workout-wrap--second {
-  display: none; }
+.timetable__workout-item-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.timetable__workout-time-wrap {
+  padding: 0;
+  margin: 74px 0 0; }
 
 .timetable__workout-wrap--third {
   display: none; }
@@ -277,14 +283,13 @@ img {
 .timetable__days-wrap {
   display: none; }
 
-.timetable__heading {
+.timetable-content__heading {
   margin: 0 0 65px;
   font-size: 52px;
   text-align: center; }
 
 .timetable__workout-wrap {
-  width: 96%;
-  padding: 0 65px;
+  width: 100%;
   margin: 0 auto; }
 
 .timetable__days-list {
@@ -294,9 +299,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 98%;
+  width: 100%;
   margin: 0 auto 8px;
-  padding: 0 0 0 75px; }
+  padding: 0; }
 
 .timetable__item {
   display: -webkit-box;
@@ -311,12 +316,15 @@ img {
   width: 148px;
   height: 66px;
   margin-right: 10px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  border: 1px solid #1c3374; }
+  border: 2px solid #1c3374; }
   .timetable__item:last-child {
     margin-right: 0; }
+
+.timetable__workout-list-wrap {
+  margin-left: 8px; }
 
 .timetable__workout-list {
   display: -webkit-box;
@@ -325,11 +333,18 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 98%;
+  width: 100%;
   margin: 0 auto;
   padding: 0; }
 
 .timetable__workout-item {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  list-style: none; }
+  .timetable__workout-item:last-child {
+    margin-right: 0; }
+
+.timetable__workout-item button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,13 +357,16 @@ img {
   width: 148px;
   height: 110px;
   margin-right: 9px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
+  border: none;
   background-color: #f8f9fc;
   cursor: pointer; }
-  .timetable__workout-item:last-child {
+  .timetable__workout-item button:last-child {
     margin-right: 0; }
+  .timetable__workout-item button:active, .timetable__workout-item button:focus {
+    opacity: 0.5; }
 
 .timetable__workout-time {
   display: -webkit-box;
@@ -363,25 +381,24 @@ img {
   width: 65px;
   height: 110px;
   margin-bottom: 7px;
-  margin-right: 9px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  border: 1px solid #1c3374;
+  border: 2px solid #1c3374;
   background: none; }
   .timetable__workout-time:last-child {
     margin-right: 0; }
 
-select {
+.timetable__select {
   display: none; }
 
 .timetable__select-custom {
   display: none; }
 
 @media only screen and (max-width: 1199px) {
-  .timetable {
+  .timetable-content {
     padding: 88px 0 0; }
-  .timetable__wrap {
+  .timetable-content__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -389,37 +406,37 @@ select {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 93%;
-    padding: 0;
-    overflow: auto; }
-    .timetable__wrap::-webkit-scrollbar-track {
+    max-width: 678px;
+    padding: 0; }
+  .timetable__workout-list-wrap {
+    width: 53%;
+    overflow-x: scroll; }
+    .timetable__workout-list-wrap::-webkit-scrollbar-track {
       background: #feebef; }
-    .timetable__wrap::-webkit-scrollbar {
-      width: 205px;
+    .timetable__workout-list-wrap::-webkit-scrollbar {
+      width: 190px;
       height: 5px; }
-    .timetable__wrap::-webkit-scrollbar-thumb {
+    .timetable__workout-list-wrap::-webkit-scrollbar-thumb {
       background: #ed0233;
       border-radius: 8px; }
-  .timetable__workout-wrap--second {
-    display: block; }
-  .timetable__heading {
+  .timetable__days-list {
+    margin: 0 0 8px;
+    padding: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+  .timetable__workout-item {
+    margin-right: 11px; }
+  .timetable-content__heading {
     margin: 0 0 47px;
     font-size: 45px; }
   .timetable__workout-wrap {
-    padding: 0; }
-  .timetable__item--5,
-  .timetable__item--6,
-  .timetable__item--7 {
-    display: none; }
-  .timetable__workout-item--5,
-  .timetable__workout-item--6,
-  .timetable__workout-item--7 {
-    display: none; } }
+    padding: 0; } }
 
 @media only screen and (max-width: 767px) {
-  .timetable {
+  .timetable-content {
     padding: 72px 0 0; }
-  .timetable__heading {
+  .timetable-content__heading {
     font-size: 34px; }
   .timetable__workout-wrap {
     display: none; }
@@ -498,7 +515,7 @@ select {
     width: 78%;
     margin: 0;
     padding: 0;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     border: 2px solid;
     border-top: none;
     z-index: 10; }
@@ -820,8 +837,11 @@ select {
   border-left: none;
   border-right: none;
   border-bottom: 1px solid white;
+  border-radius: 0;
   background-color: #102654;
-  color: white; }
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
   .form__item input:hover {
     opacity: 0.7; }
   .form__item input:active, .form__item input:focus {
@@ -896,6 +916,7 @@ select {
   .form__inner-wrap {
     width: 290px; }
   .form__inner-wrap h2 {
+    margin: 0 0 21px;
     font-size: 32px;
     letter-spacing: 1px;
     white-space: nowrap; }
@@ -940,6 +961,7 @@ select {
 .gym__image-wrap {
   position: relative;
   width: 57%;
+  height: 401px;
   background-image: url("../img/gym-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-size: 660px 401px;
@@ -1140,6 +1162,8 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 1160px;
   margin: 0 auto;
   padding: 0;
@@ -1159,14 +1183,10 @@ select {
           transform: translateX(0); }
 
 .gym-membership__item-card {
-  position: relative;
-  padding: 57px 67px 60px;
   width: 31%;
+  padding: 57px 67px 60px;
+  margin-bottom: 36px;
   text-align: center;
-  background-image: url("../img/rub-desktop.png");
-  background-repeat: no-repeat;
-  background-size: 30px 42px;
-  background-position: 225px 205px;
   background-color: white;
   border: 7px solid transparent;
   cursor: pointer; }
@@ -1176,12 +1196,6 @@ select {
        border-image: linear-gradient(to bottom, #d10a42, #0041ca);
     border-image-slice: 1; }
 
-.gym-membership__item-card--active {
-  -o-border-image: linear-gradient(to bottom, #d10a42, #0041ca);
-     border-image: -webkit-gradient(linear, left top, left bottom, from(#d10a42), to(#0041ca));
-     border-image: linear-gradient(to bottom, #d10a42, #0041ca);
-  border-image-slice: 1; }
-
 .gym-membership__heading {
   margin: 0 0 13px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1190,18 +1204,17 @@ select {
 
 .gym-membership__description {
   width: 100%;
-  margin-bottom: 97px;
+  margin-bottom: 80px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   text-align: center; }
 
 .gym-membership__price-bg {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 45%;
-  display: inline-block;
-  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 100px;
@@ -1209,12 +1222,23 @@ select {
   opacity: 0.5; }
 
 .gym-membership__price {
-  display: block;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
   font-size: 60px;
-  margin-bottom: 67px;
+  margin-bottom: 48px;
   padding-left: 17px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
+  background-image: url("../img/rub-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 30px 42px;
+  background-position: 158px 8px;
   letter-spacing: 2px;
   text-align: left;
   color: #103aae;
@@ -1223,10 +1247,12 @@ select {
 .gym-membership__item {
   height: 48px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  border: none;
+  border: 2px solid transparent;
   background: none;
   color: rgba(16, 38, 84, 0.5);
   cursor: pointer; }
+  .gym-membership__item:hover {
+    border-color: #d10a42; }
 
 .gym-membership__item--active {
   border-bottom: 2px solid #d10a42;
@@ -1310,23 +1336,26 @@ select {
   .gym-membership__item-card {
     width: 100%;
     padding: 42px 33px 49px;
-    margin: 0 auto 39px;
-    background-image: url("../img/rub-mobile.png");
-    background-repeat: no-repeat;
-    background-size: 24px 33px;
-    background-position: 180px 170px; }
+    margin: 0 auto 35px; }
   .gym-membership__heading {
     margin: 0 0 7px;
     font-size: 22px; }
   .gym-membership__description {
-    margin-bottom: 76px; }
+    margin: 0 0 63px; }
   .gym-membership__price-bg {
-    font-size: 80px;
-    top: 41%; }
+    left: 0;
+    right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 80px; }
   .gym-membership__price {
-    padding-right: 30px;
-    padding-left: 0;
-    margin-bottom: 54px;
+    padding-left: 40px;
+    margin-bottom: 36px;
+    background-image: url("../img/rub-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 24px 33px;
+    background-position: 148px 15px;
     font-size: 48px;
     text-align: center; } }
 
@@ -1585,7 +1614,8 @@ select {
 .nav__item {
   padding-left: 14px;
   padding-right: 28px;
-  font-size: 14px; }
+  font-size: 14px;
+  list-style: none; }
   .nav__item:first-child {
     padding-left: 0; }
   .nav__item:last-child {
@@ -1601,7 +1631,7 @@ select {
 
 @media only screen and (max-width: 1199px) {
   .nav {
-    width: 79%; }
+    width: 80%; }
   .nav__item {
     padding-left: 14px;
     padding-right: 20px; }
@@ -1780,7 +1810,7 @@ select {
 @media only screen and (max-width: 1199px) {
   .offer__wrapper {
     max-width: 678px;
-    padding: 108px 0 100px; }
+    padding: 104px 0 100px; }
   .offer__heading {
     margin: 0 0 50px;
     font-size: 42px; }
@@ -1796,7 +1826,7 @@ select {
     margin-right: 0;
     margin-bottom: 29px; }
   .offer__price-text {
-    width: 65%;
+    width: 62%;
     padding: 44px 39px 42px 40px; }
   .offer__sale-list {
     -webkit-box-orient: horizontal;
@@ -1898,9 +1928,9 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 35%;
+  width: 36%;
   margin-bottom: 80px;
-  padding: 0 0 75px 25px;
+  padding: 0 0 74px 28px;
   border-bottom: 1px solid rgba(209, 10, 66, 0.2); }
   .our-advantages__item:not(:nth-last-child(n+3)) {
     border-bottom: none;
@@ -1914,13 +1944,7 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 28px;
-  padding-top: 16px;
-  background: -webkit-gradient(linear, left top, right top, from(#d10a42), to(#0041ca));
-  background: linear-gradient(to right, #d10a42, #0041ca);
-  -webkit-background-clip: text;
-  /*stylelint-disable-line*/
-  -webkit-text-fill-color: transparent; }
+  margin-right: 32px; }
 
 .our-advantages__descr-wrap {
   width: 68%; }
@@ -1936,13 +1960,22 @@ select {
   font-family: "Roboto Condensed", "Arial", sans-serif; }
 
 .our-advantages__num {
-  margin-bottom: 17px;
+  height: 55px;
+  padding-top: 17px;
   font-size: 71px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, right top, from(#d10a42), to(#0041ca));
+  background: linear-gradient(to right, #d10a42, #0041ca);
+  -webkit-background-clip: text;
+  /*stylelint-disable-line*/
+  -webkit-text-fill-color: transparent;
+  color: #0041ca; }
 
 .our-advantages__num--100 {
-  margin-bottom: 36px;
+  margin-bottom: 20px;
+  -webkit-text-fill-color: white;
+  /*stylelint-disable-line*/
   color: white; }
 
 .our-advantages__units,
@@ -1950,7 +1983,12 @@ select {
 .our-advantages__places,
 .our-advantages__years {
   font-size: 14px;
-  font-family: "Roboto Condensed", "Arial", sans-serif; }
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#d10a42), to(#0041ca));
+  background: linear-gradient(to right, #d10a42, #0041ca);
+  -webkit-background-clip: text;
+  /*stylelint-disable-line*/
+  -webkit-text-fill-color: transparent; }
 
 .our-advantages__item--exercise-machines {
   position: absolute;
@@ -1967,7 +2005,7 @@ select {
       -ms-flex-align: center;
           align-items: center;
   width: 20%;
-  padding: 73px 0 58px;
+  padding: 62px 0 58px;
   background-color: #1c3374; }
 
 .our-advantages__item--exercise-machines h3 {
@@ -1995,17 +2033,16 @@ select {
   .our-advantages__list {
     padding: 0; }
   .our-advantages__item {
-    width: 47%;
-    margin-bottom: 325px;
+    width: 48%;
+    margin-bottom: 322px;
     padding: 0;
     border-bottom: none; }
     .our-advantages__item:not(:nth-last-child(n+3)) {
       margin-bottom: 95px; }
   .our-advantages__num {
-    margin-bottom: 8px;
     font-size: 58px; }
   .our-advantages__num--100 {
-    margin-bottom: 30px;
+    margin-bottom: 14px;
     font-size: 74px; }
   .our-advantages__descr-wrap {
     width: 100%; }
@@ -2017,7 +2054,7 @@ select {
     left: 17%;
     top: 20%;
     width: 65%;
-    padding: 58px 0 32px;
+    padding: 45px 0 37px;
     margin-bottom: 0; }
   .our-advantages__item--exercise-machines h3 {
     margin-bottom: 19px;
@@ -2028,8 +2065,9 @@ select {
 @media only screen and (max-width: 767px) {
   .our-advantages__wrap {
     max-width: 320px;
-    padding: 75px 0 23px; }
+    padding: 75px 0 45px; }
   .our-advantages__heading {
+    margin: 0 0 40px;
     font-size: 32px;
     letter-spacing: 1px; }
   .our-advantages__list {
@@ -2051,14 +2089,16 @@ select {
     width: 100%;
     margin-bottom: 45px; }
     .our-advantages__item:first-child {
-      margin-bottom: 40px; }
+      margin-bottom: 22px; }
     .our-advantages__item:not(:nth-last-child(n+3)) {
-      margin-bottom: 40px; }
+      margin-bottom: 21px; }
   .our-advantages__num-wrap {
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding-top: 12px;
     text-align: center; }
+  .our-advantages__num {
+    padding-top: 12px; }
   .our-advantages__descr-wrap--one p {
     width: 80%;
     margin: 0 auto; }
@@ -2070,14 +2110,14 @@ select {
     left: 0;
     top: 27%;
     width: 100%;
-    margin-bottom: 48px;
-    padding: 62px 0 42px; }
+    margin-bottom: 31px;
+    padding: 44px 0 42px; }
   .our-advantages__item--exercise-machines h3 {
     margin-bottom: 15px; }
   .our-advantages__item--exercise-machines p {
     width: 58%; }
   .our-advantages__num--100 {
-    margin-bottom: 24px; } }
+    margin-bottom: 8px; } }
 
 .promo__wrapper {
   display: -webkit-box;
@@ -2302,16 +2342,16 @@ select {
 
 @media only screen and (max-width: 1199px) {
   .social {
-    width: 102px;
+    width: 100px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .social__item {
-    padding-right: 0; } }
+    padding-right: 20px; } }
 
 @media only screen and (max-width: 767px) {
   .social {
-    width: 143px; }
+    width: 165px; }
   .social__icon {
     width: 32px; } }
 
@@ -2443,6 +2483,7 @@ select {
 /* Ограничивающая оболочка */
 .slick-list {
   width: 1160px;
+  height: auto;
   overflow: hidden; }
 
 /* Лента слайдов */
@@ -2468,7 +2509,7 @@ select {
 
 .trainers__list-wrap .slick-prev {
   top: 45%;
-  left: -50px;
+  left: -20px;
   width: 16px;
   height: 32px;
   background-color: transparent;
@@ -2479,7 +2520,7 @@ select {
   cursor: pointer; }
 
 .trainers__list-wrap .slick-next {
-  right: -50px;
+  right: -20px;
   top: 45%;
   width: 16px;
   height: 32px;
@@ -2493,14 +2534,16 @@ select {
 .trainers__list-wrap .slick-slide {
   width: 260px !important;
   /* stylelint-disable-line */
-  height: 294px !important;
-  /* stylelint-disable-line */ }
+  height: 294px; }
+
+/* Слайдер отзывы */
+.customer-reviews__wrap .slick-list {
+  background-color: #1c3374; }
 
 .customer-reviews__wrap .slick-slide {
   width: 566px !important;
   /* stylelint-disable-line */ }
 
-/* Слайдер отзывы */
 .customer-reviews__wrap {
   position: relative; }
 
@@ -2539,10 +2582,7 @@ select {
     left: -55px; }
   .trainers__list-wrap .slick-next {
     top: 42%;
-    right: -55px; }
-  .trainers__list-wrap .slick-slide {
-    width: 268px !important;
-    /* stylelint-disable-line */ } }
+    right: -55px; } }
 
 @media only screen and (max-width: 767px) {
   .trainers__list-wrap .slick-prev {
@@ -2552,10 +2592,7 @@ select {
     top: 43%;
     right: -35px; }
   .trainers__list-wrap .slick-slide {
-    width: 226px !important;
-    /* stylelint-disable-line */
-    height: 274px !important;
-    /* stylelint-disable-line */ }
+    height: 274px; }
   .customer-reviews__wrap .slick-prev {
     top: 45%;
     left: -33px; }
