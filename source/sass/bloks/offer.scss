@@ -186,12 +186,13 @@
   }
 
   .offer__heading {
+    margin: 0 0 43px;
     font-size: 32px;
   }
 
   .offer__price {
     flex-direction: column;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
   }
 
   .offer__price-text {
@@ -207,7 +208,7 @@
 
   .offer__price-text p {
     width: 80%;
-    margin-bottom: 19px;
+    margin-bottom: 23px;
   }
 
   .offer__sale-list {

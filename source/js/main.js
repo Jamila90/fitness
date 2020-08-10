@@ -85,17 +85,16 @@ $(document).ready(function () {
     const row = $(evt.target).data(`row`);
     const value = $(evt.target).data(`value`);
     const index = $(evt.target).data(`index`);
-    $(`.timetable__workout-wrap`)
-        .find(`.timetable__days-list`)
-        .find(`td:nth-child(${column})`)
+    $(`.timetable__workout-item-wrap`)
+        .find(`.timetable__workout-list-wrap`)
+        .find(`ul>li:eq(` + column + `)`)
         .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
-    $(`.timetable__workout-wrap`)
-        .find(`tr:nth-child(${row + 1})`)
-        .find(`.timetable__workout-time`)
+    $(`.timetable__workout-time-wrap`)
+        .find(`li:eq(` + (row - 1) + `)`)
         .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
     $(`.timetable__select-custom`)
         .find(`.timetable__custom-option`)
-        .find(`li:nth-child(${value})`)
+        .find(`li ${value}`)
         .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
     $(`.timetable__current-option`)
         .find(`span`, `${index}`)
@@ -107,17 +106,16 @@ $(document).ready(function () {
     const row = $(evt.target).data(`row`);
     const value = $(evt.target).data(`value`);
     const index = $(evt.target).data(`index`);
-    $(`.timetable__workout-wrap`)
-        .find(`.timetable__days-list`)
-        .find(`td:nth-child(${column})`)
+    $(`.timetable__workout-item-wrap`)
+        .find(`.timetable__workout-list-wrap`)
+        .find(`ul>li:eq(` + column + `)`)
         .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
-    $(`.timetable__workout-wrap`)
-        .find(`tr:nth-child(${row + 1})`)
-        .find(`.timetable__workout-time`)
+    $(`.timetable__workout-time-wrap`)
+        .find(`li:eq(` + (row - 1) + `)`)
         .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
     $(`.timetable__select-custom`)
         .find(`.timetable__custom-option`)
-        .find(`li:nth-child(${value})`)
+        .find(`li ${value}`)
         .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
     $(`.timetable__current-option`)
         .find(`span`, `${index}`)

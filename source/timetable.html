@@ -19,7 +19,7 @@
           <li class="timetable__workout-time timetable__workout-time--hide">08:00</li>
           <li class="timetable__workout-time timetable__workout-time--hide">12:00</li>
           <li class="timetable__workout-time timetable__workout-time--hide">18:00</li>
-          <li class="timetable__workout-time">20:00</li>
+          <li class="timetable__workout-time timetable__workout-time--hide">20:00</li>
         </ul>
         <div class="timetable__workout-list-wrap">
           <ul class="timetable__days-list">
@@ -152,38 +152,40 @@
         <li data-value="6">Воскресенье</li>
       </ul>
     </div>
-    <table class="timetable__workout-wrap timetable__workout-wrap--third">
-      <tbody>
-      <tr class="timetable__workout-list">
-        <td class="timetable__workout-time timetable__workout-time--hide">08:00</td>
-        <td class="timetable__workout-item timetable__workout-item--hide">
-          <button type="button" aria-label="Виды упражнений" data-column="1" data-row="0" data-value="1">CrossFit
-          </button>
-        </td>
-      </tr>
-      <tr class="timetable__workout-list">
-        <td class="timetable__workout-time timetable__workout-time--hide">12:00</td>
-        <td class="timetable__workout-item timetable__workout-item--hide">
-          <button type="button" aria-label="Виды упражнений" data-column="1" data-row="1" data-value="2">Body Sculpt
-          </button>
-        </td>
-      </tr>
-      <tr class="timetable__workout-list">
-        <td class="timetable__workout-time timetable__workout-time--hide">18:00</td>
-        <td class="timetable__workout-item timetable__workout-item--hide">
-          <button type="button" aria-label="Виды упражнений" data-column="1" data-row="2" data-value="3">Functional
-          </button>
-        </td>
-      </tr>
-      <tr class="timetable__workout-list">
-        <td class="timetable__workout-time timetable__workout-time--hide">20:00</td>
-        <td class="timetable__workout-item timetable__workout-item--hide">
-          <button type="button" aria-label="Виды упражнений" data-column="1" data-row="3" data-value="4">Stretching
-          </button>
-        </td>
-      </tr>
-      </tbody>
-    </table>
+    <div class="timetable__workout-item-wrap timetable__workout-wrap--second">
+      <ul class="timetable__workout-time-wrap">
+        <li class="timetable__workout-time timetable__workout-time--hide">08:00</li>
+        <li class="timetable__workout-time timetable__workout-time--hide">12:00</li>
+        <li class="timetable__workout-time timetable__workout-time--hide">18:00</li>
+        <li class="timetable__workout-time timetable__workout-time--hide">20:00</li>
+      </ul>
+      <div class="timetable__workout-list-wrap">
+        <ul class="timetable__workout-list">
+          <li class="timetable__workout-item timetable__workout-item--hide">
+            <button type="button" aria-label="Виды упражнений" data-column="1" data-row="0" data-value="1">CrossFit
+            </button>
+          </li>
+        </ul>
+        <ul class="timetable__workout-list">
+          <li class="timetable__workout-item timetable__workout-item--hide">
+            <button type="button" aria-label="Виды упражнений" data-column="1" data-row="1" data-value="2">Body Sculpt
+            </button>
+          </li>
+        </ul>
+        <ul class="timetable__workout-list">
+          <li class="timetable__workout-item timetable__workout-item--hide">
+            <button type="button" aria-label="Виды упражнений" data-column="1" data-row="2" data-value="3">Functional
+            </button>
+          </li>
+        </ul>
+        <ul class="timetable__workout-list">
+          <li class="timetable__workout-item timetable__workout-item--hide">
+            <button type="button" aria-label="Виды упражнений" data-column="1" data-row="3" data-value="4">Stretching
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </main>
 <script src="js/vendor.js"></script>

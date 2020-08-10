@@ -277,7 +277,7 @@ img {
   padding: 0;
   margin: 74px 0 0; }
 
-.timetable__workout-wrap--third {
+.timetable__workout-wrap--second {
   display: none; }
 
 .timetable__days-wrap {
@@ -396,6 +396,9 @@ img {
   display: none; }
 
 @media only screen and (max-width: 1199px) {
+  .timetable {
+    margin: 0 auto;
+    width: 700px; }
   .timetable-content {
     padding: 88px 0 0; }
   .timetable-content__wrap {
@@ -409,7 +412,7 @@ img {
     max-width: 678px;
     padding: 0; }
   .timetable__workout-list-wrap {
-    width: 53%;
+    width: 100%;
     overflow-x: scroll; }
     .timetable__workout-list-wrap::-webkit-scrollbar-track {
       background: #feebef; }
@@ -438,11 +441,9 @@ img {
     padding: 72px 0 0; }
   .timetable-content__heading {
     font-size: 34px; }
-  .timetable__workout-wrap {
+  .timetable-content__wrap {
     display: none; }
   .timetable__workout-wrap--second {
-    display: none; }
-  .timetable__workout-wrap--third {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -450,16 +451,31 @@ img {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end; }
+  .timetable__workout-list-wrap {
+    width: 69%;
+    overflow: hidden; }
   .timetable__workout-list {
     width: 100%; }
+  .timetable__workout-time-wrap {
+    margin: 74px 0 0 14px; }
   .timetable__workout-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 100%;
-    height: 79px;
     opacity: 0; }
     .timetable__workout-item--hide {
       opacity: 1; }
+  .timetable__workout-item,
+  .timetable__workout-item button {
+    width: 100%;
+    height: 79px; }
   .timetable__workout-time {
-    width: 70px;
+    width: 60px;
     height: 80px;
     border: 2px solid #1c3374;
     opacity: 0.5; }
@@ -490,12 +506,13 @@ img {
     left: 0;
     right: 0;
     display: block;
-    width: 74%;
-    margin: 0 auto 0 72px; }
+    width: 69%;
+    margin: 0 auto 0 82px; }
   .timetable__current-option {
     width: 100%;
     height: 60px;
-    padding: 16px 0;
+    margin-right: auto;
+    padding: 16px 50px;
     border: 2px solid #1c3374;
     cursor: pointer; }
   .timetable__custom-option {
@@ -512,7 +529,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 78%;
+    width: calc(100% - 48.5px);
     margin: 0;
     padding: 0;
     font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -539,15 +556,15 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     height: 60px;
     width: 100%;
-    padding-left: 40px;
+    padding-right: 45px;
     font-family: "Roboto Condensed", "Arial", sans-serif; }
   .timetable__img {
     position: absolute;
@@ -555,6 +572,7 @@ img {
     top: 0;
     width: 51px;
     height: 60px;
+    background-color: white;
     border: 2px solid #1c3374;
     cursor: pointer; }
     .timetable__img::before {
@@ -912,7 +930,7 @@ img {
 
 @media only screen and (max-width: 767px) {
   .form {
-    padding: 70px 0 66px; }
+    padding: 70px 0 72px; }
   .form__inner-wrap {
     width: 290px; }
   .form__inner-wrap h2 {
@@ -1069,7 +1087,7 @@ img {
 @media only screen and (max-width: 767px) {
   .gym__wrapper {
     max-width: 320px;
-    padding: 69px 0 275px; }
+    padding: 73px 0 275px; }
   .gym__image-wrap {
     width: 100%;
     height: 313px;
@@ -1091,8 +1109,9 @@ img {
     padding: 0 15px;
     text-align: left; }
   .gym__heading {
-    margin: 0 0 15px;
-    font-size: 32px; }
+    margin: 0 0 13px;
+    font-size: 32px;
+    letter-spacing: 1px; }
   .gym__text h3 {
     margin: 0 0 24px; }
   .gym__text p {
@@ -1853,13 +1872,14 @@ img {
     max-width: 290px;
     padding: 70px 0 60px; }
   .offer__heading {
+    margin: 0 0 43px;
     font-size: 32px; }
   .offer__price {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 33px; }
+    margin-bottom: 32px; }
   .offer__price-text {
     width: 100%;
     -webkit-box-align: center;
@@ -1871,7 +1891,7 @@ img {
     margin-bottom: 37px; }
   .offer__price-text p {
     width: 80%;
-    margin-bottom: 19px; }
+    margin-bottom: 23px; }
   .offer__sale-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
