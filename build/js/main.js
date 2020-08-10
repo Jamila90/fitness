@@ -87,7 +87,7 @@ $(document).ready(function () {
     const index = $(evt.target).data(`index`);
     $(`.timetable__workout-item-wrap`)
         .find(`.timetable__workout-list-wrap`)
-        .find(`ul>li:eq(` + column + `)`)
+        .find(`ul>li:eq(` + (column - 1) + `)`)
         .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
     $(`.timetable__workout-time-wrap`)
         .find(`li:eq(` + (row - 1) + `)`)
@@ -108,7 +108,7 @@ $(document).ready(function () {
     const index = $(evt.target).data(`index`);
     $(`.timetable__workout-item-wrap`)
         .find(`.timetable__workout-list-wrap`)
-        .find(`ul>li:eq(` + column + `)`)
+        .find(`ul>li:eq(` + (column - 1) + `)`)
         .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
     $(`.timetable__workout-time-wrap`)
         .find(`li:eq(` + (row - 1) + `)`)
