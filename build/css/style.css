@@ -677,7 +677,7 @@ img {
 
 @media only screen and (max-width: 767px) {
   .contacts__wrap {
-    padding: 75px 0 45px; }
+    padding: 73px 0 45px; }
   .contacts__heading {
     font-size: 32px; }
   .contacts__inner-wrap {
@@ -766,18 +766,19 @@ img {
     width: 226px;
     margin: 0 auto; }
   .customer-reviews__slide {
-    padding: 50px 25px 25px;
+    padding: 49px 25px 35px;
     background-image: url("../img/comment-img-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: 68px 68px;
-    background-position: 43px 43px; }
+    background-position: 41px 40px; }
   .customer-reviews__wrap h3 {
     width: 75px;
     margin-left: auto;
-    margin-bottom: 20px; }
+    margin-bottom: 23px; }
   .customer-reviews__wrap p {
     font-size: 16px;
     text-align: center;
+    line-height: 23px;
     letter-spacing: 0; }
   .customer-reviews__btn-prev::before {
     left: 13px;
@@ -803,11 +804,12 @@ img {
   margin: 0 auto;
   padding: 42px 0; }
 
-.footer-page__logo-img:hover {
-  opacity: 0.7; }
-
-.footer-page__logo-img:active, .footer-page__logo-img:focus {
-  opacity: 0.3; }
+.footer-page__logo-img {
+  width: 100%; }
+  .footer-page__logo-img:hover {
+    opacity: 0.7; }
+  .footer-page__logo-img:active, .footer-page__logo-img:focus {
+    opacity: 0.3; }
 
 @media only screen and (max-width: 1199px) {
   .footer-page__wrap {
@@ -819,7 +821,7 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     max-width: 290px;
-    padding: 40px 0; } }
+    padding: 44px 0; } }
 
 .form {
   width: 94%;
@@ -987,7 +989,7 @@ img {
   .gym__image-wrap::before {
     content: "";
     position: absolute;
-    bottom: -107px;
+    bottom: -112px;
     left: -61px;
     width: 364px;
     height: 228px;
@@ -1006,7 +1008,7 @@ img {
 .gym__play-btn {
   position: absolute;
   left: 18%;
-  bottom: -92px;
+  bottom: -100px;
   width: 100px;
   height: 100px;
   font-size: 0;
@@ -1047,6 +1049,7 @@ img {
     padding: 59px 59px 40px;
     text-align: center; }
   .gym__heading {
+    margin: 0 0 20px;
     font-size: 42px; }
   .gym__text h3 {
     margin: 0 0 33px; }
@@ -1079,7 +1082,7 @@ img {
     width: 266px; }
   .gym__play-btn {
     left: 50%;
-    bottom: -70px;
+    bottom: -73px;
     width: 73px;
     height: 73px;
     background-size: 73px 73px; } }
@@ -1315,10 +1318,12 @@ img {
     background-position: 0 0; }
   .gym-membership__wrap {
     max-width: 678px;
-    padding: 108px 118px 1528px; }
+    padding: 111px 118px 1525px; }
   .gym-membership__title {
-    margin: 0 0 32px;
+    margin: 0 0 30px;
     font-size: 42px; }
+  .gym-membership__description {
+    margin-top: 0; }
   .gym-membership__list-card {
     width: 678px;
     -webkit-box-orient: vertical;
@@ -1327,11 +1332,12 @@ img {
             flex-direction: column; }
   .gym-membership__list {
     width: 78%;
+    margin: 0 auto 45px;
     font-size: 18px; }
   .gym-membership__item-card {
     width: 442px;
-    margin: 0 auto 35px;
-    padding: 64px 109px 60px;
+    margin: 0 auto 41px;
+    padding: 58px 109px 60px;
     background-position: 267px 212px; }
     .gym-membership__item-card:last-child {
       margin-bottom: 0; } }
@@ -1351,6 +1357,7 @@ img {
             transform: translateX(0); }
   .gym-membership__list {
     width: 290px;
+    margin: 0 auto 34px;
     font-size: 16px; }
   .gym-membership__item-card {
     width: 100%;
@@ -1514,9 +1521,9 @@ img {
     background-size: 324px 390px; }
   .intro__heading {
     width: 75%;
-    margin: 0 0 35px;
+    margin: 0 0 42px;
     font-size: 86px;
-    line-height: 90px;
+    line-height: 87px;
     letter-spacing: 3px; }
   .intro__title {
     margin-bottom: 9px;
@@ -1524,7 +1531,7 @@ img {
     letter-spacing: 1px; }
   .intro__description {
     left: -25px;
-    bottom: 148px;
+    bottom: 145px;
     width: 42%; }
   .intro__link {
     width: 185px; }
@@ -1553,7 +1560,8 @@ img {
     left: -9px;
     bottom: 150px; }
   .intro__link {
-    width: 290px; } }
+    width: 290px;
+    letter-spacing: 2.5px; } }
 
 .main-header {
   position: absolute;
@@ -1666,7 +1674,7 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 30px; }
+    margin-bottom: 35px; }
   .nav_list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1676,7 +1684,7 @@ img {
         flex-wrap: wrap;
     width: 100%; }
   .nav__item {
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 40px;
     font-size: 16px; }
     .nav__item:first-child {
@@ -1693,7 +1701,7 @@ img {
   .nav__item--4 {
     position: absolute;
     right: 73px;
-    top: 47px;
+    top: 39px;
     padding: 0; }
   .nav__item--5 {
     position: absolute;
@@ -1872,7 +1880,7 @@ img {
     max-width: 290px;
     padding: 70px 0 60px; }
   .offer__heading {
-    margin: 0 0 43px;
+    margin: 0 0 46px;
     font-size: 32px; }
   .offer__price {
     -webkit-box-orient: vertical;
@@ -1885,13 +1893,15 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 48px 15px;
+    padding: 46px 15px;
     text-align: center; }
   .offer__num {
     margin-bottom: 37px; }
   .offer__price-text p {
     width: 80%;
-    margin-bottom: 23px; }
+    margin-bottom: 28px;
+    font-size: 18px;
+    letter-spacing: -0.5px; }
   .offer__sale-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1900,7 +1910,7 @@ img {
   .offer__sale-item {
     width: 100%;
     padding: 33px 0 30px;
-    margin-bottom: 33px;
+    margin-bottom: 34px;
     text-align: center; }
   .offer__sale-item p {
     width: 60%;
@@ -2045,10 +2055,10 @@ img {
 @media only screen and (max-width: 1199px) {
   .our-advantages__wrap {
     max-width: 678px;
-    padding: 115px 0 0; }
+    padding: 110px 0 0; }
   .our-advantages__heading {
     padding-right: 0;
-    margin: 0 0 55px;
+    margin: 0 0 54px;
     font-size: 42px; }
   .our-advantages__list {
     padding: 0; }
@@ -2085,7 +2095,7 @@ img {
 @media only screen and (max-width: 767px) {
   .our-advantages__wrap {
     max-width: 320px;
-    padding: 75px 0 45px; }
+    padding: 75px 0 41px; }
   .our-advantages__heading {
     margin: 0 0 40px;
     font-size: 32px;
@@ -2271,8 +2281,8 @@ img {
     max-width: 678px;
     padding: 100px 0; }
   .promo__text-content {
-    width: 44%;
-    padding: 42px 46px 50px 44px; }
+    width: 43%;
+    padding: 42px 43px 50px 44px; }
   .promo__heading {
     font-size: 52px;
     line-height: 57px;
@@ -2293,15 +2303,15 @@ img {
   .promo__date-time {
     font-size: 24px; }
   .promo__description {
-    margin: 0 0 23px;
+    margin: 0 0 20px;
     font-size: 12px;
-    letter-spacing: 0.5px; }
+    letter-spacing: 0; }
   .promo__link {
     padding-top: 8px;
     padding-bottom: 8px;
     font-size: 10px; }
   .promo__visual-content {
-    width: 56%;
+    width: 57%;
     background-image: url("../img/super-games-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: 386px 294px;
@@ -2314,10 +2324,10 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 290px;
-    padding: 70px 0 63px; }
+    padding: 72px 0 59px; }
   .promo__text-content {
     width: 100%;
-    padding: 42px 40px 48px 40px; }
+    padding: 46px 40px 48px 40px; }
   .promo__text {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -2464,7 +2474,7 @@ img {
 @media only screen and (max-width: 1199px) {
   .trainers__wrap {
     max-width: 678px;
-    padding: 6px 0 90px; }
+    padding: 6px 0 95px; }
   .trainers__heading {
     margin: 0 0 54px;
     font-size: 42px;
@@ -2606,10 +2616,10 @@ img {
 
 @media only screen and (max-width: 767px) {
   .trainers__list-wrap .slick-prev {
-    top: 43%;
+    top: 45%;
     left: -35px; }
   .trainers__list-wrap .slick-next {
-    top: 43%;
+    top: 45%;
     right: -35px; }
   .trainers__list-wrap .slick-slide {
     height: 274px; }

@@ -12,6 +12,8 @@
 }
 
 .footer-page__logo-img {
+  width: 100%;
+
   &:hover {
     opacity: 0.7;
   }
@@ -33,6 +35,6 @@
   .footer-page__wrap {
     flex-wrap: wrap;
     max-width: 290px;
-    padding: 40px 0;
+    padding: 44px 0;
   }
 }

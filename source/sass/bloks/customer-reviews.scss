@@ -77,22 +77,23 @@
   }
 
   .customer-reviews__slide {
-    padding: 50px 25px 25px;
+    padding: 49px 25px 35px;
     background-image: url("../img/comment-img-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: 68px 68px;
-    background-position: 43px 43px;
+    background-position: 41px 40px;
   }
 
   .customer-reviews__wrap h3 {
     width: 75px;
     margin-left: auto;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   .customer-reviews__wrap p {
     font-size: 16px;
     text-align: center;
+    line-height: 23px;
     letter-spacing: 0;
   }
 

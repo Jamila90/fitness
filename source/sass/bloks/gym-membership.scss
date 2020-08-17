@@ -190,12 +190,16 @@
 
   .gym-membership__wrap {
     max-width: 678px;
-    padding: 108px 118px 1528px;
+    padding: 111px 118px 1525px;
   }
 
   .gym-membership__title {
-    margin: 0 0 32px;
+    margin: 0 0 30px;
     font-size: 42px;
+  }
+
+  .gym-membership__description {
+    margin-top: 0;
   }
 
   .gym-membership__list-card {
@@ -205,13 +209,14 @@
 
   .gym-membership__list {
     width: 78%;
+    margin: 0 auto 45px;
     font-size: 18px;
   }
 
   .gym-membership__item-card {
     width: 442px;
-    margin: 0 auto 35px;
-    padding: 64px 109px 60px;
+    margin: 0 auto 41px;
+    padding: 58px 109px 60px;
     background-position: 267px 212px;
 
     &:last-child {
@@ -242,6 +247,7 @@
 
   .gym-membership__list {
     width: 290px;
+    margin: 0 auto 34px;
     font-size: 16px;
   }
 

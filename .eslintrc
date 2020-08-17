@@ -6,4 +6,4 @@ env:
   jquery: true
 
 extends:
-  "htmlacademy/es6"
+  "htmlacademy/es5"
