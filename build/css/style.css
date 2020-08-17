@@ -2512,7 +2512,8 @@ img {
 
 /* Ограничивающая оболочка */
 .slick-list {
-  width: 1160px;
+  margin: 0 auto;
+  width: 1100px;
   height: auto;
   overflow: hidden; }
 
@@ -2539,7 +2540,7 @@ img {
 
 .trainers__list-wrap .slick-prev {
   top: 45%;
-  left: -20px;
+  left: -10px;
   width: 16px;
   height: 32px;
   background-color: transparent;
@@ -2550,7 +2551,7 @@ img {
   cursor: pointer; }
 
 .trainers__list-wrap .slick-next {
-  right: -20px;
+  right: -10px;
   top: 45%;
   width: 16px;
   height: 32px;

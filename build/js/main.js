@@ -85,30 +85,30 @@ $(document).ready(function () {
     const row = $(evt.target).data(`row`);
     const value = $(evt.target).data(`value`);
     const index = $(evt.target).data(`index`);
-   if ($(window).width() > 767) {
-     $(`.timetable__workout-item-wrap`)
-       .find(`.timetable__workout-list-wrap`)
-       .find(`ul>li:eq(` + (column - 1) + `)`)
-       .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
-     $(`.timetable__workout-time-wrap`)
-       .find(`li:eq(` + (row - 1) + `)`)
-       .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
-   } else {
-     $(`.timetable__workout-item-wrap`)
-       .find(`.timetable__workout-list-wrap`)
-       .find(`ul>li:eq(` + column + `)`)
-       .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
-     $(`.timetable__workout-time-wrap`)
-       .find(`li:eq(` + row + `)`)
-       .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
-     $(`.timetable__select-custom`)
-       .find(`.timetable__custom-option`)
-       .find(`li ${value}`)
-       .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
-     $(`.timetable__current-option`)
-       .find(`span`, `${index}`)
-       .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
-   }
+    if ($(window).width() > 767) {
+      $(`.timetable__workout-item-wrap`)
+          .find(`.timetable__workout-list-wrap`)
+          .find(`ul>li:eq(` + (column - 1) + `)`)
+          .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
+      $(`.timetable__workout-time-wrap`)
+          .find(`li:eq(` + (row - 1) + `)`)
+          .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
+    } else {
+      $(`.timetable__workout-item-wrap`)
+          .find(`.timetable__workout-list-wrap`)
+          .find(`ul>li:eq(` + column + `)`)
+          .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
+      $(`.timetable__workout-time-wrap`)
+          .find(`li:eq(` + row + `)`)
+          .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
+      $(`.timetable__select-custom`)
+          .find(`.timetable__custom-option`)
+          .find(`li ${value}`)
+          .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
+      $(`.timetable__current-option`)
+          .find(`span`, `${index}`)
+          .css(`background-color`, `rgba(237, 2, 51, 1)`).css(`color`, `white`).css(`border`, `none`);
+    }
   },
   function (evt) {
     $(evt.target).css(`border`, ``).css(`background-color`, ``).css(`color`, ``);
@@ -118,27 +118,27 @@ $(document).ready(function () {
     const index = $(evt.target).data(`index`);
     if ($(window).width() > 767) {
       $(`.timetable__workout-item-wrap`)
-        .find(`.timetable__workout-list-wrap`)
-        .find(`ul>li:eq(` + (column - 1) + `)`)
-        .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
+          .find(`.timetable__workout-list-wrap`)
+          .find(`ul>li:eq(` + (column - 1) + `)`)
+          .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
       $(`.timetable__workout-time-wrap`)
-        .find(`li:eq(` + (row - 1) + `)`)
-        .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
+          .find(`li:eq(` + (row - 1) + `)`)
+          .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
     } else {
       $(`.timetable__workout-item-wrap`)
-        .find(`.timetable__workout-list-wrap`)
-        .find(`ul>li:eq(` + column + `)`)
-        .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
+          .find(`.timetable__workout-list-wrap`)
+          .find(`ul>li:eq(` + column + `)`)
+          .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
       $(`.timetable__workout-time-wrap`)
-        .find(`li:eq(` + row + `)`)
-        .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
+          .find(`li:eq(` + row + `)`)
+          .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
       $(`.timetable__select-custom`)
-        .find(`.timetable__custom-option`)
-        .find(`li ${value}`)
-        .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
+          .find(`.timetable__custom-option`)
+          .find(`li ${value}`)
+          .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
       $(`.timetable__current-option`)
-        .find(`span`, `${index}`)
-        .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
+          .find(`span`, `${index}`)
+          .css(`background-color`, ``).css(`color`, ``).css(`border`, ``);
     }
   });
 });
