@@ -2611,12 +2611,12 @@ img {
   border: none;
   cursor: pointer; }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1270px) {
   .trainers__list-wrap .slick-prev {
-    top: 42%;
+    top: 45%;
     left: -10px; }
   .trainers__list-wrap .slick-next {
-    top: 42%;
+    top: 45%;
     right: -10px; } }
 
 @media only screen and (max-width: 1199px) {
