@@ -225,22 +225,26 @@ img {
 @font-face {
   font-family: "Roboto Condensed";
   src: url("../fonts/robotocondensedlight.woff2") format("woff2"), url("../fonts/robotocondensedlight.woff") format("woff");
-  font-weight: 300; }
+  font-weight: 300;
+  font-display: swap; }
 
 @font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/bebasneueregular.woff2") format("woff2"), url("../fonts/bebasneueregular.woff") format("woff");
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: swap; }
 
 @font-face {
   font-family: "Roboto Condensed";
   src: url("../fonts/robotocondensedregular.woff2") format("woff2"), url("../fonts/robotocondensedregular.woff") format("woff");
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: swap; }
 
 @font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/bebasneuebold.woff2") format("woff2"), url("../fonts/bebasneuebold.woff") format("woff");
-  font-weight: 700; }
+  font-weight: 700;
+  font-display: swap; }
 
 .button {
   display: block;
@@ -969,13 +973,13 @@ img {
 
 .gym__text h3 {
   margin: 0 0 40px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px; }
 
 .gym__text p {
   width: 83%;
   margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   line-height: 25px; }
 
 .gym__image-wrap {
@@ -1446,7 +1450,7 @@ img {
   display: inline-block;
   width: 33%;
   margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   text-align: end;
   line-height: 20px;
@@ -1649,7 +1653,7 @@ img {
     padding-right: 0; }
 
 .nav__link {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   color: white; }
   .nav__link:hover {
     opacity: 0.7; }
@@ -2202,7 +2206,7 @@ img {
   display: inline-block;
   width: 66%;
   margin-bottom: 9px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -2221,11 +2225,11 @@ img {
 .promo__date-num {
   font-size: 40px;
   font-weight: 700;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   color: white; }
 
 .promo__date-name {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.5px;
@@ -2235,7 +2239,7 @@ img {
   display: inline-block;
   width: 95%;
   margin-bottom: 10px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -2244,7 +2248,7 @@ img {
 
 .promo__date-time {
   font-size: 40px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   letter-spacing: 0.5px;
   color: white; }
@@ -2252,7 +2256,7 @@ img {
 .promo__description {
   width: 100%;
   margin: 0 0 48px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   letter-spacing: 1px;
   color: white; }
 
@@ -2260,7 +2264,7 @@ img {
   padding-top: 22px;
   padding-bottom: 22px;
   font-size: 12px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: white; }
