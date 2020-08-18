@@ -30,7 +30,7 @@
 
 .trainers__list-wrap .slick-prev {
   top: 45%;
-  left: -10px;
+  left: -55px;
   width: 16px;
   height: 32px;
   background-color: transparent;
@@ -42,7 +42,7 @@
 }
 
 .trainers__list-wrap .slick-next {
-  right: -10px;
+  right: -55px;
   top: 45%;
   width: 16px;
   height: 32px;
@@ -102,6 +102,18 @@
   background-size: 16px 32px;
   border: none;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .trainers__list-wrap .slick-prev {
+    top: 42%;
+    left: -10px;
+  }
+
+  .trainers__list-wrap .slick-next {
+    top: 42%;
+    right: -10px;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
