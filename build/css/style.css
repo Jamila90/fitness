@@ -1155,7 +1155,7 @@ img {
 .gym-membership__wrap {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 135px 0 570px; }
+  padding: 135px 0 83px; }
 
 .gym-membership__list {
   display: -webkit-box;
@@ -1180,6 +1180,7 @@ img {
 
 .gym-membership__list-card {
   position: absolute;
+  top: 285px;
   left: 0;
   right: 0;
   display: -webkit-box;
@@ -1201,6 +1202,7 @@ img {
   list-style: none; }
 
 .gym-membership__list-card--active {
+  position: static;
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
   z-index: 2;
@@ -1226,7 +1228,7 @@ img {
   margin: 0 0 13px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 26px;
-  white-space: nowrap; }
+  white-space: pre-wrap; }
 
 .gym-membership__description {
   width: 100%;
@@ -1583,7 +1585,8 @@ img {
   width: 100%;
   max-width: 1160px;
   margin: 0 auto;
-  padding: 31px 0 0; }
+  padding: 31px 0 0;
+  z-index: 1; }
 
 .main-header__phone-link {
   font-size: 26px;
@@ -1611,8 +1614,7 @@ img {
 
 @media only screen and (max-width: 767px) {
   .main-header {
-    max-width: 290px;
-    padding: 20px 0 0; }
+    padding: 20px 15px 0; }
   .main-header__logo-img {
     width: 68px; }
   .main-header__phone-link {

@@ -9,6 +9,7 @@
   max-width: 1160px;
   margin: 0 auto;
   padding: 31px 0 0;
+  z-index: 1;
 }
 
 .main-header__phone-link {
@@ -52,8 +53,7 @@
 
 @media only screen and (max-width: 767px) {
   .main-header {
-    max-width: 290px;
-    padding: 20px 0 0;
+    padding: 20px 15px 0;
   }
 
   .main-header__logo-img {

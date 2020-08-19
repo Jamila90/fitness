@@ -21,7 +21,7 @@
 .gym-membership__wrap {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 135px 0 570px;
+  padding: 135px 0 83px;
 }
 
 .gym-membership__list {
@@ -45,6 +45,7 @@
 
 .gym-membership__list-card {
   position: absolute;
+  top: 285px;
   left: 0;
   right: 0;
   display: flex;
@@ -60,6 +61,7 @@
 }
 
 .gym-membership__list-card--active {
+  position: static;
   transition-delay: 0.5s;
   z-index: 2;
   opacity: 1;
@@ -85,7 +87,7 @@
   margin: 0 0 13px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 26px;
-  white-space: nowrap;
+  white-space: pre-wrap;
 }
 
 .gym-membership__description {
