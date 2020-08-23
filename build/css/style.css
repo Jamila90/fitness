@@ -1324,14 +1324,17 @@ img {
     background-position: 0 0; }
   .gym-membership__wrap {
     max-width: 678px;
-    padding: 111px 118px 1525px; }
+    padding: 111px 118px 100px; }
   .gym-membership__title {
     margin: 0 0 30px;
     font-size: 42px; }
   .gym-membership__description {
     margin-top: 0; }
   .gym-membership__list-card {
-    width: 678px;
+    top: 256px;
+    left: 112px;
+    width: 445px;
+    margin: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
