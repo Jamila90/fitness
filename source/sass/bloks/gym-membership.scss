@@ -48,6 +48,7 @@
   top: 285px;
   left: 0;
   right: 0;
+  z-index: -1;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -63,7 +64,7 @@
 .gym-membership__list-card--active {
   position: static;
   transition-delay: 0.5s;
-  z-index: 2;
+  z-index: 10;
   opacity: 1;
   transform: translateX(0);
 }

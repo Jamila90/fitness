@@ -1183,6 +1183,7 @@ img {
   top: 285px;
   left: 0;
   right: 0;
+  z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1205,7 +1206,7 @@ img {
   position: static;
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
-  z-index: 2;
+  z-index: 10;
   opacity: 1;
   -webkit-transform: translateX(0);
           transform: translateX(0); }
